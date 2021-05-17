@@ -104,7 +104,7 @@ function startCharge(){
 			for (i=0;i<pairings.length;i++){
 				document.getElementsByClassName(pairings[i])[0].classList.remove('highlighted');
 			}
-			let failCon = setTimeout(thermiteFailure, 90000000);
+			let failCon = setTimeout(thermiteFailure, 10000);
 			for (i=0;i<pairs.length;i++){
 				let pairing = pairs[i];
 				let cell = document.getElementsByClassName(pairs[i])[0];
