@@ -1,0 +1,61 @@
+h1, h3 {
+	text-align: center;
+	margin: auto;
+}
+
+h1 {
+	margin-top: 1%;
+	font-size: max(4vw, 40px);
+	-webkit-text-stroke-width: max(.2vw,2px);
+    -webkit-text-stroke-color: black;
+}
+
+h3 {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: max(2vw, 20px);
+	-webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-color: black;
+}
+
+hr {
+	margin-top: 2%;
+	width: 35%;
+	border-radius: 35px;
+}
+
+#selection {
+	border: solid max(.2vw, 2px) black;
+	border-radius: 25px;
+	margin: auto;
+	margin-top: 2%;
+	background-color: rgb(18,18,36);
+	width: max(75%, 300px);
+	display: flex;
+	flex-flow: column;
+	padding:2%;
+}
+
+input[type=submit] {
+	font-family: 'Bauhaus 93';
+	background-color: grey;
+	color: white;
+	font-size: max(1.2vw, 12px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;
+	margin-top: 3%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: max(20vw, 200px);
+	padding: max(2.5vw, 25px);
+	padding-top:max(1vw,10px);
+	padding-bottom:max(1vw,10px);
+	border: solid max(.2vw,2px) black;
+	border-radius: 25px;
+}
+
+input[type=submit]:hover {
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
