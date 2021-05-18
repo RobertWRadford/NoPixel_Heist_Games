@@ -60,6 +60,7 @@ function startCharge(){
 				failureMessage.innerText = 'SYSTEM BYPASSED';
 				container.append(failureMessage);
 				let homeForm = document.createElement('form');
+				homeForm.className = 'homeForm';
 				homeForm.setAttribute('action', 'index.html');
 				container.append(homeForm);
 				let homeButton = document.createElement('button');
@@ -67,6 +68,7 @@ function startCharge(){
 				homeButton.innerText = 'Go Home';
 				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
+				retryForm.className = 'retryForm';
 				retryForm.setAttribute('action', 'thermite.html');
 				container.append(retryForm);
 				let retryButton = document.createElement('button');
@@ -82,6 +84,7 @@ function startCharge(){
 				failureMessage.innerText = 'SYSTEM DID NOT ACCEPT YOUR ANSWERS';
 				container.append(failureMessage);
 				let homeForm = document.createElement('form');
+				homeForm.className = 'homeForm';
 				homeForm.setAttribute('action', 'index.html');
 				container.append(homeForm);
 				let homeButton = document.createElement('button');
@@ -89,6 +92,7 @@ function startCharge(){
 				homeButton.innerText = 'Go Home';
 				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
+				retryForm.className = 'retryForm';
 				retryForm.setAttribute('action', 'thermite.html');
 				container.append(retryForm);
 				let retryButton = document.createElement('button');

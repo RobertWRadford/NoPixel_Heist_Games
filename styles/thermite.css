@@ -14,7 +14,7 @@ button {
 	font-family: 'Bauhaus 93';
 	background-color: grey;
 	color: white;
-	font-size: max(2vw, 20px);
+	font-size: max(1.8vw, 18px);
 	-webkit-text-stroke-width: max(.15vw,1.5px);
     -webkit-text-stroke-color: black;);
 	width: max(12vw, 120px);
@@ -23,7 +23,7 @@ button {
 	padding-bottom:max(.5vw,5px);
 	border: solid max(.2vw,2px) black;
 	border-radius: 10px;
-	transform: translate(-50%, 50%);
+	transform: translateX(-50%);
 	margin-left: 50%;
 }
 
@@ -33,23 +33,33 @@ button:hover {
 	cursor: pointer;
 }
 
+
+
 .startButton {
-	margin-top: min(12.5vw, 150px);
+	margin-top: max(12.5vw, 150px);
+	transform: translate(-50%, -50%);
 }
 
 .middleText {
 	text-align: center;
-	margin-top: min(12.5vw, 150px);
+	margin-bottom: 0;
+	margin-top: max(12.5vw, 150px);
 	margin-left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 	font-size: max(3vw, 30px);
 	-webkit-text-stroke-width: max(.2vw,2px);
     -webkit-text-stroke-color: black;
 }
 
 .middleText.fail {
-	margin-top: min(10vw, 100px);
-	font-size: max(2.5vw, 25px);
+	margin-top: max(6vw, 60px);
+	font-size: max(1.5vw, 15px);
+	-webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-color: black;
+}
+
+.retryForm {
+	margin-top: 2%;
 }
 
 .grid {
