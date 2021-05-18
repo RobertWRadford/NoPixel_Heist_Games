@@ -248,14 +248,16 @@ function startHack(){
 			answerForm.append(prompt);
 			let answerInput = document.createElement('input');
 			answerInput.setAttribute('id', 'answerInput');
+			answerInput.setAttribute('autocomplete', 'off');
 			answerInput.setAttribute('placeholder', 'Blue Rectangle...');
 			answerForm.append(answerInput);
-			let failureCon = setTimeout(failHack, 5000);
+			let failureCon = setTimeout(failHack, 7000);
 			answerForm.addEventListener('submit', (e) => {
 				e.preventDefault();
 				clearTimeout(failureCon);
 				checkAnswer();
 			});
+			answerInput.focus();
 		}
 		setInterval(updateTimer, 10);
 		setTimeout(hackPhase, 2000);

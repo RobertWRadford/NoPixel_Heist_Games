@@ -47,7 +47,6 @@ function startCharge(){
 			let coord = pairs[Math.floor(Math.random()*36)];
 			if (!pairings.includes(coord)){
 				pairings.push(coord);
-				console.log(coord);
 				document.getElementsByClassName(coord)[0].className += ' highlighted';
 			}
 		}
@@ -55,7 +54,6 @@ function startCharge(){
 		function challenge(){
 
 			function thermiteSuccess(){
-				console.log('trying to succeed?');
 				container.innerHTML = '';
 				let failureMessage = document.createElement('p');
 				failureMessage.className = 'middleText fail';
@@ -104,7 +102,7 @@ function startCharge(){
 			for (i=0;i<pairings.length;i++){
 				document.getElementsByClassName(pairings[i])[0].classList.remove('highlighted');
 			}
-			let failCon = setTimeout(thermiteFailure, 10000);
+			let failCon = setTimeout(thermiteFailure, 8000);
 			for (i=0;i<pairs.length;i++){
 				let pairing = pairs[i];
 				let cell = document.getElementsByClassName(pairs[i])[0];
