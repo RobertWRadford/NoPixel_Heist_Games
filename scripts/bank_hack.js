@@ -97,21 +97,21 @@ function startHack(){
 		function hackPhase(){
 
 			function failHack(){
-				hackBlock.innerHTML = '';
+				container.innerHTML = '';
 				let failureMessage = document.createElement('p');
 				failureMessage.className = 'middleText fail';
 				failureMessage.innerText = 'SYSTEM DID NOT ACCEPT YOUR ANSWERS';
-				hackBlock.append(failureMessage);
+				container.append(failureMessage);
 				let homeForm = document.createElement('form');
 				homeForm.setAttribute('action', 'index.html');
-				hackBlock.append(homeForm);
+				container.append(homeForm);
 				let homeButton = document.createElement('button');
 				homeButton.className = 'home';
 				homeButton.innerText = 'Go Home';
 				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
 				retryForm.setAttribute('action', 'bank_hack.html');
-				hackBlock.append(retryForm);
+				container.append(retryForm);
 				let retryButton = document.createElement('button');
 				retryButton.className = 'retry';
 				retryButton.innerText = 'Retry';
@@ -119,21 +119,21 @@ function startHack(){
 			}
 
 			function hackSucceed(){
-				hackBlock.innerHTML = '';
+				container.innerHTML = '';
 				let failureMessage = document.createElement('p');
 				failureMessage.className = 'middleText fail';
 				failureMessage.innerText = 'SYSTEM BYPASSED';
-				hackBlock.append(failureMessage);
+				container.append(failureMessage);
 				let homeForm = document.createElement('form');
 				homeForm.setAttribute('action', 'index.html');
-				hackBlock.append(homeForm);
+				container.append(homeForm);
 				let homeButton = document.createElement('button');
 				homeButton.className = 'home';
 				homeButton.innerText = 'Go Home';
 				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
 				retryForm.setAttribute('action', 'bank_hack.html');
-				hackBlock.append(retryForm);
+				container.append(retryForm);
 				let retryButton = document.createElement('button');
 				retryButton.className = 'retry';
 				retryButton.innerText = 'Retry';

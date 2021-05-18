@@ -15,7 +15,7 @@ button {
 	background-color: grey;
 	color: white;
 	font-size: max(1.8vw, 18px);
-	-webkit-text-stroke-width: max(.15vw,1.5px);
+	-webkit-text-stroke-width: max(.1vw,1px);
     -webkit-text-stroke-color: black;);
 	width: max(12vw, 120px);
 	padding: max(1.5vw, 15px);
@@ -47,7 +47,7 @@ button:hover {
 	margin-left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: max(3vw, 30px);
-	-webkit-text-stroke-width: max(.2vw,2px);
+	-webkit-text-stroke-width: max(.1vw,1px);
     -webkit-text-stroke-color: black;
 }
 
