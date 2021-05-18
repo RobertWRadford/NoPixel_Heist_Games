@@ -38,9 +38,9 @@ function startHack(){
 		let timebarLeft = document.createElement('div');
 		let timebarRight = document.createElement('div');
 		timebarLeft.className = 'round-time-bar left';
-		timebarLeft.setAttribute('style', '--duration: 5;');
+		timebarLeft.setAttribute('style', '--duration: 7;');
 		timebarRight.className = 'round-time-bar right';
-		timebarRight.setAttribute('style', '--duration: 5;');
+		timebarRight.setAttribute('style', '--duration: 7;');
 		let answerSection = document.createElement('section');
 		answerSection.setAttribute('id', 'answerSection');
 
