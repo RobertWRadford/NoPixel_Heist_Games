@@ -83,7 +83,7 @@ button:hover {
 	font-family: 'calibri';
 	width: max(19vw, 60px);
 	height:  max(19vw, 60px);
-	margin-left: max(1.8vw, 12px);
+	margin-left: 1.8vw;
 	line-height: max(19vw, 60px);
 	font-size: max(8vw, 40px);
 	animation: shrink;
@@ -103,7 +103,7 @@ button:hover {
 	font-family: 'calibri';
 	width: max(19vw, 60px);
 	height: max(19vw, 60px);
-	margin-left: max(1.8vw, 12px);
+	margin-left: 1.8vw;
 	border: solid 2px black;
 }
 
@@ -114,11 +114,11 @@ button:hover {
 .internalShape {
 	position: absolute;
 	z-index: 1;
-	width: max(16vw, 50px);
-	height: max(16vw, 50px);
-	margin-left: max(1.35vw, 3.5px);
-	margin-top: max(1.35vw, 3.5px);
-	border: solid max(.15vw,1.5px) black;
+	width: max(16.2vw, 50px);
+	height: max(16.2vw, 50px);
+	margin-left: 1.25vw;
+	margin-top: 1.25vw;
+	border: solid .15vw black;
 }
 
 .CIRCLE {
