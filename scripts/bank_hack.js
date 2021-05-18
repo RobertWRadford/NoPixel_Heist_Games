@@ -162,6 +162,15 @@ function startHack(){
 			let promptTwo = prompts[Math.floor(Math.random()*7)];
 			question.push(`${promptOne} (${digit_one})`);
 			question.push(`${promptTwo} (${digit_two})`);
+			
+			let promptBlocks = [];
+			for (i=0; i<4; i++) {
+				if (numbers[i] == digit_one) {
+					promptBlocks.unshift(blocks[i]);
+				} else if (numbers[i] == digit_two) {
+					promptBlocks.push(blocks[i]);
+				}
+ 			}
 
 			function checkAnswer(){
 				input = document.getElementById('answerInput').value;
@@ -224,9 +233,12 @@ function startHack(){
 				let shape_text = shapes[Math.floor(Math.random()*4)];
 				block_shape_text.innerText = shape_text;
 				blocks[i].append(block_shape_text);
-				if ([digit_one, digit_two].includes(i+1)) {
-					let blockData = new quizBlock(bgs[0], shape_form, bgs[1], bgs[2], bgs[3], shape_text, color_text);
-					answers.push(blockData.resolve[answers.length ? promptTwo : promptOne]);
+				if (promptBlocks[0] == blocks[i]){
+					promptBlocks[0] = new quizBlock(bgs[0], shape_form, bgs[1], bgs[2], bgs[3], shape_text, color_text);
+					answers.unshift(promptBlocks[0].resolve[answers.length ? promptTwo : promptOne]);
+				} else if (promptBlocks[1] == blocks[i]) {
+					promptBlocks[1] = new quizBlock(bgs[0], shape_form, bgs[1], bgs[2], bgs[3], shape_text, color_text);
+					answers.push(promptBlocks[1].resolve[answers.length ? promptTwo : promptOne]);
 				}
 			}
 
