@@ -15,6 +15,7 @@ function generateTable(){
 
 function startCharge(){
 
+	let interval = document.getElementsByClassName('interval')[0].value;
 	container.innerHTML = '';
 	let warning = document.createElement('p');
 	warning.innerText = 'Get Ready!';
@@ -106,7 +107,7 @@ function startCharge(){
 			for (i=0;i<pairings.length;i++){
 				document.getElementsByClassName(pairings[i])[0].classList.remove('highlighted');
 			}
-			let failCon = setTimeout(thermiteFailure, 8000);
+			let failCon = setTimeout(thermiteFailure, interval*1000);
 			for (i=0;i<pairs.length;i++){
 				let pairing = pairs[i];
 				let cell = document.getElementsByClassName(pairs[i])[0];

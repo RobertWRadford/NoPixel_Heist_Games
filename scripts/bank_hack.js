@@ -23,6 +23,7 @@ function quizBlock(background, shape, shapeColor, textColor, numberColor, shapeT
 
 function startHack(){
 	
+	let interval = document.getElementsByClassName('interval')[0].value;
 	container.innerHTML = '';
 	let warning = document.createElement('p');
 	warning.innerText = 'Get Ready!';
@@ -38,9 +39,9 @@ function startHack(){
 		let timebarLeft = document.createElement('div');
 		let timebarRight = document.createElement('div');
 		timebarLeft.className = 'round-time-bar left';
-		timebarLeft.setAttribute('style', '--duration: 5;');
+		timebarLeft.setAttribute('style', `--duration: ${interval};`);
 		timebarRight.className = 'round-time-bar right';
-		timebarRight.setAttribute('style', '--duration: 5;');
+		timebarRight.setAttribute('style', `--duration: ${interval};`);
 		let answerSection = document.createElement('section');
 		answerSection.setAttribute('id', 'answerSection');
 
@@ -258,7 +259,7 @@ function startHack(){
 			answerInput.setAttribute('autocomplete', 'off');
 			answerInput.setAttribute('placeholder', 'Blue Rectangle...');
 			answerForm.append(answerInput);
-			let failureCon = setTimeout(failHack, 5000);
+			let failureCon = setTimeout(failHack, interval*1000);
 			answerForm.addEventListener('submit', (e) => {
 				e.preventDefault();
 				clearTimeout(failureCon);

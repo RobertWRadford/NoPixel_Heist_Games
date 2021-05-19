@@ -35,9 +35,35 @@ button:hover {
 
 
 
+.settings {
+	margin-top:2%;
+	width: 100%;
+}
+
+.timing {
+	display: block;
+	margin-left: 50%;
+	margin-top: 10%;
+	transform: translate(-50%);
+	font-size: max(2vw, 20px);
+	-webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.interval {
+	margin-top: 5%;
+	margin-left: 50%;
+	transform: translate(-50%);
+	color: white;
+	width: max(3vw, 30px);
+	padding: 1.5vw;
+	background-color: rgb(72,72,144);
+	font-size: max(1.5vw, 15px);
+}
+
 .startButton {
-	margin-top: max(12.5vw, 150px);
-	transform: translate(-50%, -50%);
+	margin-top: 10%;
 }
 
 .middleText {

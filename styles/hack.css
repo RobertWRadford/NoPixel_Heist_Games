@@ -31,8 +31,35 @@ button:hover {
 	cursor: pointer;
 }
 
+.settings {
+	margin-top:5%;
+	width: 100%;
+}
+
+.timing {
+	display: block;
+	margin-left: 50%;
+	margin-top: 10%;
+	transform: translate(-50%);
+	font-size: max(3.5vw, 35px);
+	-webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.interval {
+	margin-top: 5%;
+	margin-left: 50%;
+	transform: translate(-50%);
+	color: white;
+	width: max(5vw, 50px);
+	padding: 1.5vw;
+	background-color: rgb(72,72,144);
+	font-size: max(2.5vw, 25px);
+}
+
 .startButton {
-	margin-top: min(30vw, 45vh);
+	margin-top: 10%;
 }
 
 .home, .retry {
