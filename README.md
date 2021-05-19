@@ -1,12 +1,14 @@
 # NoPixel_Heist_Games
 
-I realized even after making a pretty large number of sites, I hadn't created anything with timed actions. While I was working I had also been keeping entertained on the side by watching content from the GTA V roleplay server NoPixel, and I thought some of the minigames might be perfect to reproduce in HTML/CSS/JS to practice timed elements. I was expecting to only spend one afternoon on this but I ended up spending two to get everything done. Some of the code layout is really sloppy and the aesthetics are very minimal effort but it functions entirely as desired.
+<a href="https://robertwradford.github.io/NoPixel_Heist_Games/" target="_blank" rel="noopener noreferrer">Click here to go to the page.</a>
+
+I realized even after making a pretty large number of sites, I hadn't created anything with timed actions. While I was working I had also been keeping entertained on the side by watching content from the GTA V roleplay server NoPixel, and I thought some of the minigames might be perfect to reproduce in HTML/CSS/JS to practice timed elements. I was expecting to only spend one afternoon on this but I ended up spending two to get everything done and then another evening for additional styling, bugfixes, and features. Some of the code layout is really sloppy and the aesthetics are still very minimal effort but I think they get the idea across.
 
 The site is built to scale things down to be playable on mobile devices as well, optimally in portrait view. Thermite is perfect on mobile but the hacking may be extra challenging with smaller boxes/text to look at and unfortunately landscape view won't work because of the onscreen keyboard blocking vision.
 
-<a href="https://robertwradford.github.io/NoPixel_Heist_Games/" target="_blank" rel="noopener noreferrer">Click here to go to the page.</a>
-
 ## Tutorial
+
+Before you press start on any puzzle you can change the puzzle completion timer if you like either to challenge yourself to extreme mode or to give yourself extra time to practice. 
 
 ### Hacking
 
@@ -21,8 +23,8 @@ The first step in the hacking process is seeing a mixed combination of 1-4 (1-5 
     <li>Text Background Color (The color of the shape and color text in the block)</li>
   </ul>
 
-You will have 5 (7 for vault) seconds to answer and press enter, running out of time to type or not hitting enter will result in a failure, and you will need to succesfully do that 7 (10 for vault) times to succesfully complete the hack.
+By default you will have 5 (7 for vault) seconds to answer and press enter, running out of time to type or not hitting enter will result in a failure, and you will need to succesfully do that 7 (10 for vault) times to succesfully complete the hack.
 
 ### Thermite
 
-Once the thermite starts you will see a 6x6 grid of squares, with 14 random squares highlighted. After 5 seconds the highlighted squares will blend back in with the other squares and you will have 8 seconds to click all of the previously highlighted tiles. If you click a correct square it will highlight again, and if you click an incorrect square it will highlight red. If you click 3 incorrect squares or run out of time the thermite attempt is a failure.
+Once the thermite starts you will see a 6x6 grid of squares, with 14 random squares highlighted. After 5 seconds the highlighted squares will blend back in with the other squares and by default you will have 8 seconds to click all of the previously highlighted tiles. If you click a correct square it will highlight again, and if you click an incorrect square it will highlight red. If you click 3 incorrect squares or run out of time the thermite attempt is a failure.
