@@ -2,10 +2,6 @@
 
 <a href="https://robertwradford.github.io/NoPixel_Heist_Games/" target="_blank" rel="noopener noreferrer">Click here to go to the page.</a>
 
-While I've been working I've also been keeping entertained on the side by watching content from the GTA V roleplay server NoPixel, and I thought some of the minigames might be perfect to reproduce in HTML/CSS/JS to practice timed elements. I realized even after making a pretty large number of sites, I hadn't ever created anything that did use timed actions so it was a perfect opportunity. I was expecting to only spend one afternoon on this but I ended up spending two to get everything done and then another evening for additional styling, bugfixes, and features. Some of the code layout is really sloppy and the aesthetics are still very minimal effort but I think they get the idea across.
-
-The site is built to scale things down to be playable on mobile devices as well, optimally in portrait view. Thermite is perfect on mobile but the hacking may be extra challenging with smaller boxes/text to look at and unfortunately landscape view won't work because of the onscreen keyboard blocking vision.
-
 ## Tutorial
 
 Before you press start on any puzzle you can change the puzzle completion timer if you like either to challenge yourself to extreme mode or to give yourself extra time to practice. 
@@ -28,3 +24,9 @@ By default you will have 5 (7 for vault) seconds to answer and press enter, runn
 ### Thermite
 
 Once the thermite starts you will see a 6x6 grid of squares, with 14 random squares highlighted. After 5 seconds the highlighted squares will blend back in with the other squares and by default you will have 8 seconds to click all of the previously highlighted tiles. If you click a correct square it will highlight again, and if you click an incorrect square it will highlight red. If you click 3 incorrect squares or run out of time the thermite attempt is a failure.
+
+## Project idea / Dev talk
+
+I've been keeping entertained on the side by watching content from the GTA V roleplay server NoPixel while working, and I thought some of the minigames might be perfect to reproduce in HTML/CSS/JS to practice timed elements. I realized that even after making a pretty large number of sites, I hadn't ever created anything that used timed actions so it was a perfect opportunity. I was expecting to only spend one afternoon on this but I ended up spending two to get everything done and then another evening for additional styling, bugfixes, and features. Some of the code layout is really sloppy and the aesthetics are still very minimal effort but I think they get the idea across.
+
+The site is built to auto-scale with resolution and so it is playable on mobile devices as well, optimally in portrait view. Thermite is perfect on mobile but the hacking may be extra challenging with smaller boxes/text to look at and unfortunately landscape view won't work because of the onscreen keyboard blocking vision.
