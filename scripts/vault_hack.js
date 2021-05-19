@@ -241,10 +241,10 @@ function startHack(){
 				blocks[i].append(block_shape_text);
 				if (promptBlocks[0] == blocks[i]){
 					promptBlocks[0] = new quizBlock(bgs[0], shape_form, bgs[1], bgs[2], bgs[3], shape_text, color_text);
-					answers.unshift(promptBlocks[0].resolve[answers.length ? promptTwo : promptOne]);
+					answers.unshift(promptBlocks[0].resolve[promptOne]);
 				} else if (promptBlocks[1] == blocks[i]) {
 					promptBlocks[1] = new quizBlock(bgs[0], shape_form, bgs[1], bgs[2], bgs[3], shape_text, color_text);
-					answers.push(promptBlocks[1].resolve[answers.length ? promptTwo : promptOne]);
+					answers.push(promptBlocks[1].resolve[promptTwo]);
 				}
 			}
 
