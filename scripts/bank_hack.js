@@ -97,7 +97,11 @@ function startHack(){
 
 		function hackPhase(){
 
+			let audio = new Audio('../assets/timer.wav');
+			audio.loop = true;
+
 			function failHack(){
+				audio.pause();
 				container.innerHTML = '';
 				let failureMessage = document.createElement('p');
 				failureMessage.className = 'middleText fail';
@@ -143,6 +147,16 @@ function startHack(){
 
 
 			let colors = ['RED', 'BLUE', 'PURPLE', 'YELLOW', 'ORANGE', 'GREEN', 'BLACK', 'WHITE']
+			let colorPalette = {
+				'RED': '#7f0001',
+				'BLUE': '#2894f4',
+				'PURPLE': '#8e2fa0',
+				'YELLOW': '#ffec47',
+				'ORANGE': '#ff9909',
+				'GREEN': '#50ac54',
+				'BLACK': 'BLACK',
+				'WHITE': 'WHITE',
+			};
 			let shapes = ['SQUARE', 'RECTANGLE', 'TRIANGLE', 'CIRCLE']
 			let prompts = ['BACKGROUND COLOR', 'SHAPE', 'SHAPE COLOR', 'TEXT BACKGROUND COLOR', 'COLOR TEXT', 'SHAPE TEXT', 'NUMBER COLOR'];
 			let blocks = [block_one, block_two, block_three, block_four];
@@ -207,16 +221,16 @@ function startHack(){
 				blocks[i].innerHTML = '';
 				blocks[i].classList.remove('digitPlace');
 				blocks[i].className = 'quizBox';
-				blocks[i].style.backgroundColor = bgs[0];
+				blocks[i].style.backgroundColor = colorPalette[bgs[0]];
 				
 				let block_shape = document.createElement('div');
 				block_shape.className = 'internalShape';
 				let shape_form = shapes[Math.floor(Math.random()*4)];
 				block_shape.className += ' '+shape_form;
-				block_shape.style.backgroundColor = bgs[1];
+				block_shape.style.backgroundColor = colorPalette[bgs[1]];
 				blocks[i].append(block_shape);
 
-				block_text_backgroundColor = bgs[2];
+				block_text_backgroundColor = colorPalette[bgs[2]];
 				let block_color_text = document.createElement('p');
 				block_color_text.className = 'colorText';
 				block_color_text.style.color = block_text_backgroundColor;
@@ -225,7 +239,7 @@ function startHack(){
 				blocks[i].append(block_color_text);
 				let block_number_text = document.createElement('p');
 				block_number_text.className = 'numberText';
-				block_number_text.style.color = bgs[3];
+				block_number_text.style.color = colorPalette[bgs[3]];
 				block_number_text.innerText = String(Math.ceil(Math.random()*4))
 				blocks[i].append(block_number_text);
 				let block_shape_text = document.createElement('p');
@@ -249,6 +263,10 @@ function startHack(){
 			container.append(timebarRight);
 			container.append(answerSection);
 
+			for (i=0; i<time.length;i++){
+				time[i] = 0;
+			}
+
 			let answerForm = document.createElement('form');
 			answerSection.append(answerForm);
 			let prompt = document.createElement('label');
@@ -262,9 +280,11 @@ function startHack(){
 			let failureCon = setTimeout(failHack, interval*1000);
 			answerForm.addEventListener('submit', (e) => {
 				e.preventDefault();
+				audio.pause();
 				clearTimeout(failureCon);
 				checkAnswer();
 			});
+			audio.play();
 			answerInput.focus();
 		}
 		setInterval(updateTimer, 10);
