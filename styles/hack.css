@@ -190,22 +190,34 @@ button:hover {
 }
 
 .round-time-bar {
-	display: inline-block;
+	position: absolute;
 	margin-top: 3%;
 	width: 40%;
 	overflow: hidden;
 	height: 5px;
 	animation: roundtime calc(var(--duration) * 1s) linear forwards;
-	background: linear-gradient(to bottom, orange, #900);
+	background: linear-gradient(to bottom, #Ff8500, #b33b00);
+}
+
+.hiding-bar {
+	position: absolute;
+	margin-top: 3%;
+	z-index: 1;
+	width: 80%;
+	left: 10%;
+	height: 5px;
+	background: linear-gradient(to bottom, #995000, #4c2800);
 }
 
 .round-time-bar.left {
-	margin-left: 10%;
+	z-index: 2;
+	left:10%;
 	transform-origin: right center;
 }
 
 .round-time-bar.right {
-	margin-right: 10%;
+	z-index: 2;
+	left:50%;
 	transform-origin: left center;
 }
 

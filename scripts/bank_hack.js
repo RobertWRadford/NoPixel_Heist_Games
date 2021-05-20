@@ -261,6 +261,9 @@ function startHack(){
 
 			container.append(timebarLeft);
 			container.append(timebarRight);
+			let hiddenBar = document.createElement('div');
+			hiddenBar.className = 'hiding-bar';
+			container.append(hiddenBar);
 			container.append(answerSection);
 
 			for (i=0; i<time.length;i++){
