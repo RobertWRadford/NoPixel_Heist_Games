@@ -118,15 +118,19 @@ function startCharge(){
 				cell.addEventListener('click', (e) => {
 					e.preventDefault();
 					if (pairings.includes(pairing)) {
-						correct += 1;
-						document.getElementsByClassName(pairing)[0].className += ' highlighted';
+						if (!document.getElementsByClassName(pairing)[0].className.includes('highlighted')) {
+							correct += 1;
+							document.getElementsByClassName(pairing)[0].className += ' highlighted';
+						}
 						if (correct == 14) {
 							clearTimeout(failCon);
 							thermiteSuccess();
 						}
 					} else {
-						wrong += 1;
-						document.getElementsByClassName(pairing)[0].className += ' wrong';
+						if (!document.getElementsByClassName(pairing)[0].className.includes('wrong')) {
+							wrong += 1;
+							document.getElementsByClassName(pairing)[0].className += ' wrong';
+						}
 						if (wrong == 3) {
 							thermiteFailure();
 						}
