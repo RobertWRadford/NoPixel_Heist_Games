@@ -196,7 +196,7 @@ input[type=submit]:hover {
 
 .round-time-bar {
 	position: absolute;
-	margin-top: 7%;
+	margin-top: 9%;
 	width: 40%;
 	overflow: hidden;
 	height: 5px;
@@ -206,7 +206,7 @@ input[type=submit]:hover {
 
 .hiding-bar {
 	position: absolute;
-	margin-top: 7%;
+	margin-top: 9%;
 	z-index: 1;
 	width: 80%;
 	left: 10%;
@@ -233,7 +233,7 @@ input[type=submit]:hover {
 }
 
 #answerSection {
-	margin-top: 1.5%;
+	margin-top: 3.5%;
 	width: 100%;
 }
 
@@ -250,7 +250,7 @@ input[type=submit]:hover {
 #answerInput {
 	color: white;
 	margin-left: max(30%, 87.5px);
-	margin-top: 7%;
+	margin-top: 8%;
 	width: max(40%, 125px);
 	padding: max(.5vw, 5px);
 	background-color: transparent;
