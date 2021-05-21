@@ -257,7 +257,7 @@ input[type=submit]:hover {
 	font-size: max(2vw, 10px);
 	outline: none;
 	border: 0;
-	border-bottom: 5px solid white;
+	border-bottom: max(.2vw, 2px) solid white;
 }
 
 #answerInput::placeholder {
