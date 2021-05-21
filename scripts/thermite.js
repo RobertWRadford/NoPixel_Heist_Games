@@ -1,5 +1,6 @@
 let container = document.getElementById('thermiteBlock');
 let starter = document.getElementsByClassName('startButton')[0];
+let intervalSetting = document.getElementsByClassName('settings')[0];
 
 function generateTable(){
 	let board = document.createElement('table');
@@ -138,6 +139,11 @@ function startCharge(){
 	}
 	setTimeout(conductThermite, 5000);
 }
+
+intervalSetting.addEventListener('submit', (e) => {
+	e.preventDefault();
+	startCharge();
+})
 
 starter.addEventListener('click', (e) => {
 	e.preventDefault();

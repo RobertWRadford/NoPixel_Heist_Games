@@ -1,5 +1,6 @@
 let container = document.getElementById('hackBlock');
 let starter = document.getElementsByClassName('startButton')[0];
+let intervalSetting = document.getElementsByClassName('settings')[0];
 let correct = 0;
 
 function quizBlock(background, shape, shapeColor, textColor, numberColor, shapeText, colorText){
@@ -303,6 +304,10 @@ function startHack(){
 	setTimeout(ongoingHack, 5000);
 }
 
+intervalSetting.addEventListener('submit', (e) => {
+	e.preventDefault();
+	startHack();
+})
 
 starter.addEventListener('click', (e) => {
 	e.preventDefault();

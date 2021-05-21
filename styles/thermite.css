@@ -10,7 +10,7 @@
 	height: max(25vw, 300px);
 }
 
-button {
+button, input[type=submit] {
 	font-family: 'Bauhaus 93';
 	background-color: grey;
 	color: white;
@@ -18,21 +18,27 @@ button {
 	-webkit-text-stroke-width: max(.1vw,1px);
     -webkit-text-stroke-color: black;);
 	width: max(12vw, 120px);
-	padding: max(1.5vw, 15px);
-	padding-top:max(.5vw,5px);
+	padding: max(.25vw, 2.5px);
+	padding-top:max(.25vw, 2.5px);
 	padding-bottom:max(.5vw,5px);
 	border: solid max(.1vw,1px) black;
 	border-radius: 10px;
 	transform: translateX(-50%);
 	margin-left: 50%;
+	margin-top: 2%;
 }
 
 button:hover {
-	color: black;
+	color: darkgrey;
 	background-color: white;
 	cursor: pointer;
 }
 
+input[type=submit]:hover {
+	color: darkgrey;
+	background-color: white;
+	cursor: pointer;
+}
 
 .home, .retry {
 	margin-top: 3%;
@@ -67,7 +73,7 @@ button:hover {
 }
 
 .startButton {
-	margin-top: 10%;
+	margin-top: 6%;
 }
 
 .middleText {
