@@ -55,7 +55,7 @@ function startCharge(){
 		function challenge(){
 
 			function thermiteSuccess(){
-				let audio = new Audio('../assets/welding.wav');
+				let audio = new Audio('assets/welding.wav');
 				audio.play();
 				setTimeout(() => audio.pause(), 5000);
 				container.innerHTML = '';

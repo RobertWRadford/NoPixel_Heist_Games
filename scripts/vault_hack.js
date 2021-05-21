@@ -102,7 +102,7 @@ function startHack(){
 
 		function hackPhase(){
 
-			let audio = new Audio('../assets/timer.wav');
+			let audio = new Audio('assets/timer.wav');
 			audio.loop = true;
 
 			function failHack(){
