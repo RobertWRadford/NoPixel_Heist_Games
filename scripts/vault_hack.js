@@ -197,7 +197,7 @@ function startHack(){
 				input = document.getElementById('answerInput').value;
 				correctAnswer = answers.join(' ');
 				if (input.toUpperCase() == correctAnswer) {
-					if (correct == 9) {
+					if (correct == 4) {
 						hackSucceed();
 					} else {
 						correct += 1;

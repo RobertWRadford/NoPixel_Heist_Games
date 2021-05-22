@@ -19,7 +19,7 @@ The first step in the hacking process is seeing a mixed combination of 1-4 (1-5 
     <li>Text Background Color (The color of the shape and color text in the block)</li>
   </ul>
 
-By default you will have 5 (7 for vault) seconds to answer and press enter, running out of time to type or not hitting enter will result in a failure, and you will need to succesfully do that 7 (10 for vault) times to succesfully complete the hack.
+By default you will have 5 (7 for vault) seconds to answer and press enter, running out of time to type or not hitting enter will result in a failure, and you will need to succesfully do that 7 (5 for vault) times to succesfully complete the hack.
 
 ### Thermite
 
