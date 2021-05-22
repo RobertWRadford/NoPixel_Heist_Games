@@ -99,13 +99,13 @@ input[type=submit]:hover {
 }
 
 .grid {
-	width: max(24vw, 290px);
-	height: max(24vw, 290px);
-	margin-left: max(.5vw, 5px);
+	width: max(24.8vw, 298px);
+	height: max(24.8vw, 298px);
+	margin-left: max(.1vw, 1px);
 	margin-top: 50%;
 	transform: translateY(-50%);
 	border-collapse: seperate;
-	border-spacing: max(.6vw, 6px);
+	border-spacing: max(.7vw, 7px);
 }
 
 .block {
