@@ -51,7 +51,6 @@ input[type=submit]:hover {
 .timing {
 	display: block;
 	margin-left: 50%;
-	margin-top: 10%;
 	transform: translate(-50%);
 	font-size: max(2vw, 20px);
 	-webkit-text-stroke-width: max(.1vw,1px);
@@ -78,7 +77,7 @@ input[type=submit]:hover {
 .middleText {
 	text-align: center;
 	margin-left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%);
 	font-size: max(3vw, 30px);
 	-webkit-text-stroke-width: max(.05vw,.5px);
     -webkit-text-stroke-color: black;
@@ -92,8 +91,6 @@ input[type=submit]:hover {
 	width: max(24.8vw, 298px);
 	height: max(24.8vw, 298px);
 	margin-left: max(.1vw, 1px);
-	margin-top: 50%;
-	transform: translateY(-50%);
 	border-collapse: seperate;
 	border-spacing: max(.7vw, 7px);
 }

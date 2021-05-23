@@ -47,6 +47,7 @@ function startHack(){
 		answerSection.setAttribute('id', 'answerSection');
 
 		container.innerHTML = '';
+		container.style.display = 'block';
 		container.append(timerSection);
 		container.append(hackBlocksSection);
 
@@ -102,6 +103,7 @@ function startHack(){
 			audio.loop = true;
 
 			function failHack(){
+				container.style.display = 'flex';
 				audio.pause();
 				container.innerHTML = '';
 				let failureMessage = document.createElement('p');
@@ -189,6 +191,7 @@ function startHack(){
  			}
 
 			function checkAnswer(){
+				container.style.display = 'flex';
 				input = document.getElementById('answerInput').value;
 				correctAnswer = answers.join(' ');
 				if (input.toUpperCase() == correctAnswer) {

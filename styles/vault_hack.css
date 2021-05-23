@@ -42,14 +42,12 @@ input[type=submit]:hover {
 }
 
 .settings {
-	margin-top:5%;
 	width: 100%;
 }
 
 .timing {
 	display: block;
 	margin-left: 50%;
-	margin-top: 10%;
 	transform: translate(-50%);
 	font-size: max(2.5vw, 25px);
 	-webkit-text-stroke-width: max(.1vw,1px);
@@ -80,7 +78,7 @@ input[type=submit]:hover {
 .middleText {
 	text-align: center;
 	margin-left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%);
 	font-size: max(3.5vw, 35px);
 	-webkit-text-stroke-width: max(.05vw,.5px);
     -webkit-text-stroke-color: black;
