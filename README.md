@@ -23,7 +23,9 @@ By default you will have 5 (7 for vault) seconds to answer and press enter, runn
 
 ### Thermite
 
-Once the thermite starts you will see a 6x6 grid of squares, with 14 random squares highlighted. After 5 seconds the highlighted squares will blend back in with the other squares and by default you will have 8 seconds to click all of the previously highlighted tiles. If you click a correct square it will highlight again, and if you click an incorrect square it will highlight red. If you click 3 incorrect squares or run out of time the thermite attempt is a failure.
+Once the thermite starts you will see a 6x6 (5x5 for jewelry thermite) grid of squares, with 14 (10 for jewelery thermite) random squares highlighted. After 5 seconds the highlighted squares will blend back in with the other squares and by default you will have 8 seconds to click all of the previously highlighted tiles. If you click a correct square it will highlight again, and if you click an incorrect square it will highlight red. If you click 3 incorrect squares or run out of time the thermite attempt is a failure.
+
+I am not currently sure if the jewelry store thermite gives less time to click or allows for less inaccurate clicks before failing, if anyone knows please let me know!
 
 ## Project idea / Dev talk
 
