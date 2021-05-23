@@ -6,6 +6,9 @@
 	background-color: rgb(34,40,50);
 	width: max(90vw, 300px);
 	height: min(70vw, 90vh);
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 button, input[type=submit] {
@@ -76,7 +79,6 @@ input[type=submit]:hover {
 
 .middleText {
 	text-align: center;
-	margin-top: min(30vw, 45vh);
 	margin-left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: max(3.5vw, 35px);
@@ -85,8 +87,6 @@ input[type=submit]:hover {
 }
 
 .middleText.fail {
-	margin-top: min(20vw, 30vh);
-	margin-bottom: 0;
 	font-size: max(1.8vw, 20px);
 }
 
