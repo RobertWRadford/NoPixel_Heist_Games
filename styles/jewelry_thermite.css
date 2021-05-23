@@ -83,15 +83,13 @@ input[type=submit]:hover {
 	margin-left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: max(3vw, 30px);
-	-webkit-text-stroke-width: max(.1vw,1px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
     -webkit-text-stroke-color: black;
 }
 
 .middleText.fail {
 	margin-top: max(6vw, 60px);
-	font-size: max(1.5vw, 15px);
-	-webkit-text-stroke-width: max(.1vw,1px);
-    -webkit-text-stroke-color: black;
+	font-size: max(2vw, 20px);
 }
 
 .retryForm {

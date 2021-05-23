@@ -80,7 +80,7 @@ input[type=submit]:hover {
 	margin-left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: max(3.5vw, 35px);
-	-webkit-text-stroke-width: max(.1vw,1px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
     -webkit-text-stroke-color: black;
 }
 
