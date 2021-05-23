@@ -4,9 +4,9 @@ let intervalSetting = document.getElementsByClassName('settings')[0];
 
 function generateTable(){
 	let board = document.createElement('table');
-	for (i=0; i<6; i++){
+	for (i=0; i<5; i++){
 		let row = document.createElement('tr');
-		for (j=0; j<6; j++){
+		for (j=0; j<5; j++){
 			let cell = document.createElement('td');
 			row.append(cell);
 		}
@@ -26,9 +26,9 @@ function startCharge(){
 	function conductThermite(){
 		container.innerHTML = '';
 		let board = document.createElement('table');
-		for (i=0; i<6; i++){
+		for (i=0; i<5; i++){
 			let row = document.createElement('tr');
-			for (j=0; j<6; j++){
+			for (j=0; j<5; j++){
 				let cell = document.createElement('td');
 				cell.className = `block ${i}-${j}`;
 				row.append(cell);
@@ -38,15 +38,14 @@ function startCharge(){
 		board.className = 'grid';
 		container.append(board);
 
-		pairs = ['0-0', '0-1', '0-2', '0-3', '0-4', '0-5', 
-				'1-0', '1-1', '1-2', '1-3', '1-4', '1-5', 
-				'2-0', '2-1', '2-2', '2-3', '2-4', '2-5', 
-				'3-0', '3-1', '3-2', '3-3', '3-4', '3-5', 
-				'4-0', '4-1', '4-2', '4-3', '4-4', '4-5', 
-				'5-0', '5-1', '5-2', '5-3', '5-4', '5-5'];
+		pairs = ['0-0', '0-1', '0-2', '0-3', '0-4', 
+				'1-0', '1-1', '1-2', '1-3', '1-4', 
+				'2-0', '2-1', '2-2', '2-3', '2-4', 
+				'3-0', '3-1', '3-2', '3-3', '3-4', 
+				'4-0', '4-1', '4-2', '4-3', '4-4'];
 		pairings = [];
-		while (pairings.length < 14) {
-			let coord = pairs[Math.floor(Math.random()*36)];
+		while (pairings.length < 10) {
+			let coord = pairs[Math.floor(Math.random()*25)];
 			if (!pairings.includes(coord)){
 				pairings.push(coord);
 				document.getElementsByClassName(coord)[0].className += ' highlighted';
@@ -74,7 +73,7 @@ function startCharge(){
 				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
 				retryForm.className = 'retryForm';
-				retryForm.setAttribute('action', 'thermite.html');
+				retryForm.setAttribute('action', 'jewelry_thermite.html');
 				container.append(retryForm);
 				let retryButton = document.createElement('button');
 				retryButton.className = 'retry';
@@ -98,7 +97,7 @@ function startCharge(){
 				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
 				retryForm.className = 'retryForm';
-				retryForm.setAttribute('action', 'thermite.html');
+				retryForm.setAttribute('action', 'jewelry_thermite.html');
 				container.append(retryForm);
 				let retryButton = document.createElement('button');
 				retryButton.className = 'retry';
@@ -122,7 +121,7 @@ function startCharge(){
 							correct += 1;
 							document.getElementsByClassName(pairing)[0].className += ' highlighted';
 						}
-						if (correct == 14) {
+						if (correct == 10) {
 							clearTimeout(failCon);
 							thermiteSuccess();
 						}

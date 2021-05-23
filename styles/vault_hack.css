@@ -13,8 +13,8 @@ button, input[type=submit] {
 	background-color: grey;
 	color: white;
 	font-size: max(2vw, 20px);
-	-webkit-text-stroke-width: max(.1vw,1px);
-    -webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;);
 	width: max(12vw, 120px);
 	padding: max(1.5vw, 15px);
 	padding-top:max(.25vw,2.5px);
@@ -116,29 +116,27 @@ input[type=submit]:hover {
 	text-align: center;
 	color: white;
 	font-family: 'calibri';
-	width: max(19vw, 60px);
-	height:  max(19vw, 60px);
-	margin-left: 1.8vw;
-	line-height: max(19vw, 60px);
-	font-size: max(8vw, 40px);
+	width: max(16vw, 50px);
+	height:  max(16vw, 50px);
+	margin-left: 1vw;
+	line-height: max(16vw, 50px);
+	font-size: max(8vw, 36px);
 	animation: shrink;
 	animation-delay: 1s;
 	animation-duration: 1.5s;
 }
 
 @keyframes shrink {
-	from {font-size: max(8vw, 40px);}
+	from {font-size: max(8vw, 36px);}
 	to {font-size: 1px;}
 }
 
 .quizBox {
-	background-color: white;
 	text-align: center;
-	color: white;
 	font-family: 'calibri';
-	width: max(19vw, 60px);
-	height: max(19vw, 60px);
-	margin-left: 1.8vw;
+	width: max(16vw, 50px);
+	height: max(16vw, 50px);
+	margin-left: 1vw;
 	border: solid 2px black;
 }
 
@@ -149,10 +147,10 @@ input[type=submit]:hover {
 .internalShape {
 	position: absolute;
 	z-index: 1;
-	width: max(16.2vw, 50px);
-	height: max(16.2vw, 50px);
-	margin-left: 1.25vw;
-	margin-top: 1.25vw;
+	width: max(14vw, 40px);
+	height: max(14vw, 40px);
+	margin-left: 1vw;
+	margin-top: 1vw;
 	border: solid .15vw black;
 }
 
@@ -169,8 +167,8 @@ input[type=submit]:hover {
 }
 
 .RECTANGLE {
-	height: max(8vw, 30px);
-	margin-top: max(5vw, 15px);
+	height: max(7vw, 30px);
+	margin-top: 4.5vw;
 }
 
 .quizBox > p {
@@ -178,22 +176,22 @@ input[type=submit]:hover {
 	z-index: 2;
 	font-size: max(2.5vw, 10px);
 	font-weight: 900;
-	width: max(19.5vw, 60px);
+	width: max(16.5vw, 50px);
 	text-align: center;
 	-webkit-text-stroke-width: max(.1vw,.5px);
     -webkit-text-stroke-color: black;
 }
 
 .colorText {
-	margin-top: max(5vw, 10px);
+	margin-top: max(4.2vw, 10px);
 }
 
 .numberText {
-	margin-top:  max(7.5vw, 20px);
+	margin-top:  max(6.6vw, 20px);
 }
 
 .shapeText {
-	margin-top: max(10vw, 34px);
+	margin-top: max(9vw, 34px);
 }
 
 .round-time-bar {
@@ -243,7 +241,7 @@ input[type=submit]:hover {
 	width: 100%;
 	display: block;
 	text-align: center;
-	font-size: max(1.2vw, 8px);
+	font-size: max(1.2vw, 10px);
 	font-weight: 700;
 	letter-spacing: .5px;
 	font-family: 'calibri';

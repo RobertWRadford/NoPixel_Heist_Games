@@ -15,7 +15,7 @@ button, input[type=submit] {
 	background-color: grey;
 	color: white;
 	font-size: max(1.8vw, 18px);
-	-webkit-text-stroke-width: max(.1vw,1px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
     -webkit-text-stroke-color: black;);
 	width: max(12vw, 120px);
 	padding: max(.25vw, 2.5px);

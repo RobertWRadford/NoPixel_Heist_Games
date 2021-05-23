@@ -35,6 +35,16 @@ hr {
 	padding:2%;
 }
 
+.selectionMenu {
+	margin-top: 3%;
+	margin-bottom: 5%;
+	width: 60%;
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 20%;
+	justify-content: space-evenly;
+}
+
 input[type=submit] {
 	font-family: 'Bauhaus 93';
 	background-color: grey;
@@ -42,7 +52,7 @@ input[type=submit] {
 	font-size: max(1.5vw, 15px);
 	-webkit-text-stroke-width: max(.05vw,.5px);
     -webkit-text-stroke-color: black;
-	margin-top: 3%;
+	margin-top: 5%;
 	margin-left: 50%;
 	transform: translateX(-50%);
 	width: max(15vw, 150px);
