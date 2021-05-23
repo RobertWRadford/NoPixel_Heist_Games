@@ -89,7 +89,7 @@ input[type=submit]:hover {
 
 .middleText.fail {
 	margin-top: max(6vw, 60px);
-	font-size: max(2vw, 20px);
+	font-size: max(1.8vw, 20px);
 }
 
 .retryForm {
