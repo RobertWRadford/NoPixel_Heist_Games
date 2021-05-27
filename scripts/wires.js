@@ -119,6 +119,7 @@ function rewire(){
 			}
 
 			function goodMatch(){
+				container.style.display = 'flex';
 				container.innerHTML = '';
 				let failureMessage = document.createElement('p');
 				failureMessage.className = 'middleText fail';
