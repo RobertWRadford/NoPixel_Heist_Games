@@ -139,6 +139,7 @@ function rewire(){
 				retryButton.className = 'retry';
 				retryButton.innerText = 'Retry';
 				retryForm.append(retryButton);
+				console.log(time);
 			}
 
 			time = [0,0,0];
@@ -195,7 +196,6 @@ function rewire(){
 			answerForm.addEventListener('submit', (e) => {
 				e.preventDefault();
 				clearTimeout(failureCon);
-				console.log(time);
 				checkWiring();
 			});
 			answerInput.focus();
