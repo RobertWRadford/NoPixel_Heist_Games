@@ -195,6 +195,7 @@ function rewire(){
 			answerForm.addEventListener('submit', (e) => {
 				e.preventDefault();
 				clearTimeout(failureCon);
+				console.log(time);
 				checkWiring();
 			});
 			answerInput.focus();
