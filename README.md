@@ -29,7 +29,7 @@ I am not currently sure if the jewelry store thermite gives less time to click o
 
 ### Wiring
 
-For the wiring mini-game you will be shown 6 usb port slots labeled 1-6 in proper left to right order and each of them will be labeled with a unique background-color and shape symbol pairing. You will have 10 seconds to remember what color/shape pair goes to what number, and then you will see 6 cables with a shape at the end of the cable and a color along the cable itself and you need to type out which order the cables are in within the time interval set (20 by default). For example:
+For the wiring mini-game you will be shown 6 usb port slots labeled 1-6 in proper left to right order and each of them will be labeled with a unique background-color and shape symbol pairing. You will have 10 seconds to remember what color/shape pair goes to what number, and then you will see 6 cables with a shape at the end of the cable and a color along the cable itself and you need to type out which order the cables are in within the time interval set (15 by default). For example:
 
   ports:
     <ol>
@@ -54,7 +54,7 @@ For the wiring mini-game you will be shown 6 usb port slots labeled 1-6 in prope
   Answer:
     643215
 
-This is not a NoPixel minigame, it is the initial version of an idea I had inspired by the hacking minigame combined with a real server system cabling procedure I've dealt with in the past. I think that as is the difficulty is likely too high and I may need to add more time, or more reasonably remove one or two ports/cables from the game.
+This is not a NoPixel minigame, it is the initial version of an idea I had inspired by the hacking minigame combined with a real server system cabling procedure I've dealt with in the past. I'm not sure that this is the best version of the game, and perhaps reducing the number of cables or something could improve it, but after a lot of practice with the game I've been able to succeed regularly at 10 seconds to memorize and 15 seconds to input answers. I also think there may be wiggle room to make the time to memorize lower but I'm not sure on that one.
 
 ## Project idea / Dev talk
 
