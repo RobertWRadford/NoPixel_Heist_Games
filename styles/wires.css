@@ -1,0 +1,222 @@
+#wirePanel {
+	border: solid max(.1vw, 1px) black;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 2%;
+	background-color: rgb(34,40,50);
+	width: max(90vw, 300px);
+	height: min(70vw, 90vh);
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button, input[type=submit] {
+	font-family: 'Bauhaus 93';
+	background-color: grey;
+	color: white;
+	font-size: max(2vw, 20px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;
+	width: max(12vw, 120px);
+	padding: max(1.5vw, 15px);
+	padding-top:max(.25vw,2.5px);
+	padding-bottom:max(.25vw,2.5px);
+	border: solid max(.1vw,1px) black;
+	border-radius: 10px;
+	transform: translate(-50%, -50%);
+	margin-left: 50%;
+	margin-top: 2%;
+}
+
+button:hover {
+	color: darkgrey;
+	background-color: white;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	color: darkgrey;
+	background-color: white;
+	cursor: pointer;
+}
+
+.settings {
+	width: 100%;
+}
+
+.timing {
+	display: block;
+	margin-left: 50%;
+	transform: translate(-50%);
+	font-size: max(2.5vw, 25px);
+	-webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.interval {
+	margin-top: 5%;
+	margin-left: 50%;
+	transform: translate(-50%);
+	color: white;
+	width: max(5vw, 50px);
+	padding: 1.5vw;
+	background-color: rgb(76,88,122);
+	font-size: max(2.5vw, 25px);
+	border-radius: 10px;
+}
+
+.startButton {
+	margin-top: 7%;
+}
+
+.middleText {
+	text-align: center;
+	margin-left: 50%;
+	transform: translate(-50%);
+	font-size: max(3.5vw, 35px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
+  -webkit-text-stroke-color: black;
+}
+
+.middleText.fail {
+	font-size: max(1.8vw, 20px);
+}
+
+#timerSection {
+	outline: solid 1px white;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+	margin-top: 2%;
+	font-size: max(2vw, 14px);
+}
+
+#timerSection > p {
+	font-family: 'calibri';
+}
+
+#backPanels {
+	margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.panel {
+	width: max(12vw, 45px);
+	height: max(24vw, 90px);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	-webkit-text-stroke-width: max(.15vw,1px);
+  -webkit-text-stroke-color: black;
+}
+
+.position {
+	font-family: 'calibri';
+	font-size: max(6vw, 28px);
+	margin: 0;
+}
+
+.panelShape {
+	background-color: black;
+	width: max(4vw, 15px);
+	height: max(4vw, 15px);
+}
+
+.CIRCLE {
+	border-radius: 50%;
+}
+
+.TRIANGLE {
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.SQUARE {
+	border-radius: 0;
+}
+
+.RECTANGLE {
+	height: max(2vw, 7.5px);
+	margin-top: max(1vw, 3.25px);
+}
+
+.port {
+	background: linear-gradient(rgb(85,85,85), rgb(155,155,155));
+	width: max(3vw, 10px);
+	height: max(1.5vw, 5px);
+	border: max(.02vw, 1.5px) solid black;
+}
+
+.cableDiv {
+	width: max(12vw, 45px);
+	height: max(24vw, 90px);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	-webkit-text-stroke-width: max(.15vw,1px);
+  -webkit-text-stroke-color: black;
+}
+
+.plug {
+	background: linear-gradient( #797979, #c5c5c5, #e5e5e5);
+	width: max(5vw, 18px);
+	height: max(2.5vw, 8px);
+}
+
+.end{
+	background-color: black;
+	width: max(8vw, 20px);
+	height: max(7vw, 20px);
+	z-index: 1;
+}
+
+.usbShape{
+	position: absolute;
+	background-color: white;
+	z-index: 2;
+	width: max(3.5vw, 10px);
+	height: max(3.5vw, 10px);
+	margin-top: max(3.25vw, 13px);
+}
+
+.usbShape.RECTANGLE {
+	height: max(2vw, 7.5px);
+	margin-top: max(4vw, 14.5px);
+}
+
+.cable {
+	width: max(1.25vw, 5px);
+	height: max(18vw, 70px);
+}
+
+#answerSection {
+	margin-top: 3%;
+	width: 100%;
+}
+
+#answerInput {
+	color: white;
+	margin-left: max(30%, 87.5px);
+	margin-top: 3%;
+	width: max(40%, 125px);
+	padding: max(.5vw, 5px);
+	background-color: transparent;
+	font-size: max(2vw, 10px);
+	outline: none;
+	border: 0;
+	border-bottom: max(.2vw, 2px) solid white;
+}
+
+#answerInput::placeholder {
+	color: grey;
+}

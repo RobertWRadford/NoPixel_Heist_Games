@@ -127,6 +127,7 @@ function startHack(){
 			}
 
 			function hackSucceed(){
+				container.style.display = 'flex';
 				container.innerHTML = '';
 				let failureMessage = document.createElement('p');
 				failureMessage.className = 'middleText fail';
@@ -191,7 +192,6 @@ function startHack(){
  			}
 
 			function checkAnswer(){
-				container.style.display = 'flex';
 				input = document.getElementById('answerInput').value;
 				correctAnswer = answers.join(' ');
 				if (input.toUpperCase() == correctAnswer) {
