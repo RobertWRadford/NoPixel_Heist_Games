@@ -145,7 +145,7 @@ function startHack(){
 				homeButton.innerText = 'Go Home';
 				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
-				retryForm.setAttribute('action', 'bank_hack.html');
+				retryForm.setAttribute('action', 'vault_hack.html');
 				container.append(retryForm);
 				let retryButton = document.createElement('button');
 				retryButton.className = 'retry';
