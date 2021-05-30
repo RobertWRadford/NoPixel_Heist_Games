@@ -110,13 +110,6 @@ function startHack(){
 				failureMessage.className = 'middleText fail';
 				failureMessage.innerText = 'SYSTEM DID NOT ACCEPT YOUR ANSWERS';
 				container.append(failureMessage);
-				let homeForm = document.createElement('form');
-				homeForm.setAttribute('action', 'index.html');
-				container.append(homeForm);
-				let homeButton = document.createElement('button');
-				homeButton.className = 'home';
-				homeButton.innerText = 'Go Home';
-				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
 				retryForm.setAttribute('action', 'bank_hack.html');
 				container.append(retryForm);
@@ -124,6 +117,13 @@ function startHack(){
 				retryButton.className = 'retry';
 				retryButton.innerText = 'Retry';
 				retryForm.append(retryButton);
+				let homeForm = document.createElement('form');
+				homeForm.setAttribute('action', 'index.html');
+				container.append(homeForm);
+				let homeButton = document.createElement('button');
+				homeButton.className = 'home';
+				homeButton.innerText = 'Home';
+				homeForm.append(homeButton);
 			}
 
 			function hackSucceed(){
@@ -133,13 +133,6 @@ function startHack(){
 				failureMessage.className = 'middleText fail';
 				failureMessage.innerText = 'SYSTEM BYPASSED';
 				container.append(failureMessage);
-				let homeForm = document.createElement('form');
-				homeForm.setAttribute('action', 'index.html');
-				container.append(homeForm);
-				let homeButton = document.createElement('button');
-				homeButton.className = 'home';
-				homeButton.innerText = 'Go Home';
-				homeForm.append(homeButton);
 				let retryForm = document.createElement('form');
 				retryForm.setAttribute('action', 'bank_hack.html');
 				container.append(retryForm);
@@ -147,6 +140,13 @@ function startHack(){
 				retryButton.className = 'retry';
 				retryButton.innerText = 'Retry';
 				retryForm.append(retryButton);
+				let homeForm = document.createElement('form');
+				homeForm.setAttribute('action', 'index.html');
+				container.append(homeForm);
+				let homeButton = document.createElement('button');
+				homeButton.className = 'home';
+				homeButton.innerText = 'Home';
+				homeForm.append(homeButton);
 			}
 
 
