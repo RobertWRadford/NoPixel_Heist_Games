@@ -12,7 +12,7 @@ function wirePair(){
 		'BLUE': '#2894f4',
 		'YELLOW': '#ffec47',
 		'ORANGE': '#ff9909',
-		'GREEN': '#50ac54'
+		'GREEN': '#50ac54',
 	};
 	let shapes = ['SQUARE', 'RECTANGLE', 'TRIANGLE', 'CIRCLE'];
 	let added = false;
