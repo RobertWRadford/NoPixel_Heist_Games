@@ -109,7 +109,7 @@ input[type=submit]:hover {
 
 .panel {
 	width: max(12vw, 45px);
-	height: max(24vw, 90px);
+	height: max(21vw, 75px);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -121,7 +121,7 @@ input[type=submit]:hover {
 
 .position {
 	font-family: 'calibri';
-	font-size: max(6vw, 28px);
+	font-size: max(4.5vw, 24px);
 	margin: 0;
 }
 
@@ -157,7 +157,7 @@ input[type=submit]:hover {
 
 .cableDiv {
 	width: max(12vw, 45px);
-	height: max(24vw, 90px);
+	height: max(21vw, 75px);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -186,12 +186,12 @@ input[type=submit]:hover {
 	z-index: 2;
 	width: max(3.5vw, 10px);
 	height: max(3.5vw, 10px);
-	margin-top: max(3.25vw, 13px);
+	margin-top: max(3vw, 5px);
 }
 
 .usbShape.RECTANGLE {
 	height: max(2vw, 7.5px);
-	margin-top: max(4vw, 14.5px);
+	margin-top: max(3.75vw, 6.25px);
 }
 
 .cable {
@@ -201,7 +201,7 @@ input[type=submit]:hover {
 
 .round-time-bar {
 	position: absolute;
-	margin-top: 3%;
+	margin-top: 5%;
 	width: 30%;
 	overflow: hidden;
 	height: 5px;
@@ -211,7 +211,7 @@ input[type=submit]:hover {
 
 .hiding-bar {
 	position: absolute;
-	margin-top: 3%;
+	margin-top: 5%;
 	z-index: 1;
 	width: 60%;
 	left: 20%;
@@ -238,7 +238,7 @@ input[type=submit]:hover {
 }
 
 #answerSection {
-	margin-top: 3%;
+	margin-top: 6%;
 	width: 100%;
 }
 
