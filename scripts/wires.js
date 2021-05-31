@@ -173,6 +173,20 @@ function rewire(){
 				cableDiv.append(usbShape);
 				cableDiv.append(usbCable);
 			}
+
+			let timebarLeft = document.createElement('div');
+			let timebarRight = document.createElement('div');
+			timebarLeft.className = 'round-time-bar left';
+			timebarLeft.setAttribute('style', `--duration: ${interval};`);
+			timebarRight.className = 'round-time-bar right';
+			timebarRight.setAttribute('style', `--duration: ${interval};`);
+
+			container.append(timebarLeft);
+			container.append(timebarRight);
+			let hiddenBar = document.createElement('div');
+			hiddenBar.className = 'hiding-bar';
+			container.append(hiddenBar);
+
 			let answerSection = document.createElement('section');
 			answerSection.setAttribute('id', 'answerSection');
 			container.append(answerSection);

@@ -199,6 +199,44 @@ input[type=submit]:hover {
 	height: max(18vw, 70px);
 }
 
+.round-time-bar {
+	position: absolute;
+	margin-top: 3%;
+	width: 30%;
+	overflow: hidden;
+	height: 5px;
+	animation: roundtime calc(var(--duration) * 1s) linear forwards;
+	background: linear-gradient(to bottom, #Ff8500, #b33b00);
+}
+
+.hiding-bar {
+	position: absolute;
+	margin-top: 3%;
+	z-index: 1;
+	width: 60%;
+	left: 20%;
+	height: 5px;
+	background: linear-gradient(to bottom, #995000, #4c2800);
+}
+
+.round-time-bar.left {
+	z-index: 2;
+	left:20%;
+	transform-origin: right center;
+}
+
+.round-time-bar.right {
+	z-index: 2;
+	left:50%;
+	transform-origin: left center;
+}
+
+@keyframes roundtime {
+  to {
+    transform: scaleX(0);
+  }
+}
+
 #answerSection {
 	margin-top: 3%;
 	width: 100%;
