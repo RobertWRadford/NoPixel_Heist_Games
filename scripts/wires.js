@@ -6,21 +6,19 @@ let wires = [];
 let pairs = [];
 
 function wirePair(){
-	let colors = ['RED', 'BLUE', 'PURPLE', 'YELLOW', 'ORANGE', 'GREEN', 'BLACK', 'WHITE'];
+	let colors = ['RED', 'BLUE', 'YELLOW', 'ORANGE', 'GREEN', 'WHITE'];
 	let colorPalette = {
 		'RED': '#7f0001',
 		'BLUE': '#2894f4',
-		'PURPLE': '#8e2fa0',
 		'YELLOW': '#ffec47',
 		'ORANGE': '#ff9909',
 		'GREEN': '#50ac54',
-		'BLACK': '#5d5d5d',
 		'WHITE': 'WHITE',
 	};
 	let shapes = ['SQUARE', 'RECTANGLE', 'TRIANGLE', 'CIRCLE'];
 	let added = false;
 	while (added == false) {
-		this.color = colors[Math.floor(Math.random()*8)];
+		this.color = colors[Math.floor(Math.random()*6)];
 		this.shape = shapes[Math.floor(Math.random()*4)];
 		if (!pairs.includes(`${this.color} ${this.shape}`)){
 			added = true;
@@ -216,7 +214,7 @@ function rewire(){
 		}
 
 		setInterval(updateTimer, 10);
-		setTimeout(matchWires, 6000);
+		setTimeout(matchWires, 7000);
 	}
 
 	setTimeout(setPairs, 5000);
