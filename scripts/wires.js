@@ -17,7 +17,7 @@ function wirePair(){
 	let shapes = ['SQUARE', 'RECTANGLE', 'TRIANGLE', 'CIRCLE'];
 	let added = false;
 	while (added == false) {
-		this.color = colors[Math.floor(Math.random()*6)];
+		this.color = colors[Math.floor(Math.random()*5)];
 		this.shape = shapes[Math.floor(Math.random()*4)];
 		if (!pairs.includes(`${this.color} ${this.shape}`)){
 			added = true;
