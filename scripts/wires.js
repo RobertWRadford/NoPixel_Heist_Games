@@ -6,14 +6,13 @@ let wires = [];
 let pairs = [];
 
 function wirePair(){
-	let colors = ['RED', 'BLUE', 'YELLOW', 'ORANGE', 'GREEN', 'WHITE'];
+	let colors = ['RED', 'BLUE', 'YELLOW', 'ORANGE', 'GREEN'];
 	let colorPalette = {
 		'RED': '#7f0001',
 		'BLUE': '#2894f4',
 		'YELLOW': '#ffec47',
 		'ORANGE': '#ff9909',
-		'GREEN': '#50ac54',
-		'WHITE': 'WHITE',
+		'GREEN': '#50ac54'
 	};
 	let shapes = ['SQUARE', 'RECTANGLE', 'TRIANGLE', 'CIRCLE'];
 	let added = false;
