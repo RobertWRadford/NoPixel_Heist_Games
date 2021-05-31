@@ -58,7 +58,7 @@ function rewire(){
 		container.append(timerSection);
 		container.append(backPanels);
 
-		while (wires.length < 6) {
+		while (wires.length < 5) {
 			let wire = new wirePair();
 
 			let panel = document.createElement('div');
@@ -145,8 +145,8 @@ function rewire(){
 			time = [0,0,0];
 			backPanels.innerHTML = '';
 			let numbers = [];
-			while (numbers.length < 6){
-				let rand = Math.ceil(Math.random()*6);
+			while (numbers.length < 5){
+				let rand = Math.ceil(Math.random()*5);
 				if (!numbers.includes(rand)){
 					numbers.push(rand);
 				}
@@ -181,7 +181,7 @@ function rewire(){
 			let answerInput = document.createElement('input');
 			answerInput.setAttribute('id', 'answerInput');
 			answerInput.setAttribute('autocomplete', 'off');
-			answerInput.setAttribute('placeholder', '123456');
+			answerInput.setAttribute('placeholder', '12345...');
 			answerForm.append(answerInput);
 			let failureCon = setTimeout(mismatch, interval*1000);
 
@@ -202,7 +202,7 @@ function rewire(){
 		}
 
 		setInterval(updateTimer, 10);
-		setTimeout(matchWires, 10000);
+		setTimeout(matchWires, 6000);
 	}
 
 	setTimeout(setPairs, 5000);
