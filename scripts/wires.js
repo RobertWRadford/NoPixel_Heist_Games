@@ -206,7 +206,8 @@ function rewire(){
                                         if (correct == 6) {
                                             goodMatch();
                                         } else {
-                                            setPairs();
+                                            container.innerHTML = '';
+                                            setTimeout(setPairs, 1000);
                                         }
 				} else {
 					mismatch();
