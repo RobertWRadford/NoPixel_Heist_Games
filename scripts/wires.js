@@ -56,8 +56,8 @@ function rewire(){
 		container.append(timerSection);
 		container.append(backPanels);
 
-                wires = [];
-                pairs = [];
+		wires = [];
+		pairs = [];
 
 		while (wires.length < 5) {
 			let wire = new wirePair();
@@ -143,6 +143,26 @@ function rewire(){
 				console.log(time);
 			}
 
+			function roundSwitch(){
+				container.innerHTML = '';
+				container.style.display = 'flex';
+				let warning = document.createElement('p');
+				warning.innerText = 'Moving to the next server';
+				warning.className = 'middleText';
+				container.append(warning);
+
+				function addDot(){
+					warning.innerText += '.';
+				}
+
+				let dotter = setInterval(addDot, 500);
+
+				setTimeout(()=>{
+					clearInterval(dotter);
+					setPairs();
+				}, 2000);
+			}
+
 			time = [0,0,0];
 			backPanels.innerHTML = '';
 			let numbers = [];
@@ -202,13 +222,12 @@ function rewire(){
 
 			function checkWiring(){
 				if (numbers.join('') == answerInput.value) {
-				        correct+=1;
-                                        if (correct == 6) {
-                                            goodMatch();
-                                        } else {
-                                            container.innerHTML = '';
-                                            setTimeout(setPairs, 1000);
-                                        }
+						correct+=1;
+					if (correct == 6) {
+						goodMatch();
+					} else {
+						roundSwitch();
+					}
 				} else {
 					mismatch();
 				}
@@ -223,7 +242,7 @@ function rewire(){
 		}
 
 		setInterval(updateTimer, 10);
-		setTimeout(matchWires, 7000);
+		setTimeout(matchWires, 6000);
 	}
 
 	setTimeout(setPairs, 5000);

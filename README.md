@@ -29,7 +29,7 @@ I am not currently sure if the jewelry store thermite gives less time to click o
 
 ### Wiring
 
-For the wiring mini-game you will be shown 5 usb port slots labeled 1-5 in proper left to right order and each of them will be labeled with a unique background-color and shape symbol pairing. You will have 7 seconds to remember what color/shape pair goes to what number, and then you will see 5 cables with a shape at the end of the cable and a color along the cable itself and you need to type out which order the cables are in within the time interval set (8 by default). For example:
+For the wiring mini-game you will be shown 5 usb port slots labeled 1-5 in proper left to right order and each of them will be labeled with a unique background-color and shape symbol pairing. You will have 6 seconds to remember what color/shape pair goes to what number, and then you will see 5 cables with a shape at the end of the cable and a color along the cable itself and you need to type out which order the cables are in within the time interval set (8 by default). For example:
 
   ports:
     <ol>
