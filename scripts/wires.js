@@ -56,6 +56,9 @@ function rewire(){
 		container.append(timerSection);
 		container.append(backPanels);
 
+                wires = [];
+                pairs = [];
+
 		while (wires.length < 5) {
 			let wire = new wirePair();
 
