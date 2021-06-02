@@ -1,6 +1,7 @@
 let container = document.getElementById('wirePanel');
 let starter = document.getElementsByClassName('startButton')[0];
 let intervalSetting = document.getElementsByClassName('settings')[0];
+let incorrect = 0;
 
 let wires = [];
 let pairs = [];
@@ -198,7 +199,12 @@ function rewire(){
 
 			function checkWiring(){
 				if (numbers.join('') == answerInput.value) {
-					goodMatch();
+				        correct+=1;
+                                        if (correct == 6) {
+                                            goodMatch();
+                                        } else {
+                                            setPairs();
+                                        }
 				} else {
 					mismatch();
 				}
