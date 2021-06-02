@@ -1,7 +1,7 @@
 let container = document.getElementById('wirePanel');
 let starter = document.getElementsByClassName('startButton')[0];
 let intervalSetting = document.getElementsByClassName('settings')[0];
-let incorrect = 0;
+let correct = 0;
 
 let wires = [];
 let pairs = [];
