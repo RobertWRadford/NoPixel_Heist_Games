@@ -56,6 +56,8 @@ In order to succeed you will need to cable 4 servers this way!
 
 This is not a NoPixel minigame, it is an idea I had inspired by the hacking minigame combined with a real server system cabling procedure I've dealt with in the past. It inititially was made with 6 ports and cables and more time to memorize and answer, but in practice I found that it made variance too high on difficulty. I think going lower on the number of ports would be far too easy so 5 is probably the sweet spot unless the number of colors in the pool were reduced, and perhaps 6 could be brought back for an extra challenging version.
 
+I think a really cool implementation of this minigame in NoPixel could be in the middle of either the Bobcat security or the FIB heists in order to open a door or access information on a hurry. Given the nature of cabling a server not using anything, it wouldn't require any additional tools and you would get unlimited attempts to succesfully cable the servers, but each failure raises an alert level and brings more armed guards out.
+
 ## Project idea / Dev talk
 
 I've been keeping entertained on the side by watching content from the GTA V roleplay server NoPixel while working, and I thought some of the minigames might be perfect to reproduce in HTML/CSS/JS to practice timed elements. I realized that even after making a pretty large number of sites, I hadn't ever created anything that used timed actions so it was a perfect opportunity. I was expecting to only spend one afternoon on this but I ended up spending two to get everything done and then another evening for additional styling, bugfixes, and features. Some of the code layout is really sloppy and the aesthetics are still very minimal effort but I think they get the idea across.
