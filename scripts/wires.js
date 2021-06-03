@@ -155,12 +155,12 @@ function rewire(){
 					warning.innerText += '.';
 				}
 
-				let dotter = setInterval(addDot, 500);
+				let dotter = setInterval(addDot, 750);
 
 				setTimeout(()=>{
 					clearInterval(dotter);
 					setPairs();
-				}, 2000);
+				}, 3000);
 			}
 
 			time = [0,0,0];
@@ -223,7 +223,7 @@ function rewire(){
 			function checkWiring(){
 				if (numbers.join('') == answerInput.value) {
 						correct+=1;
-					if (correct == 6) {
+					if (correct == 4) {
 						goodMatch();
 					} else {
 						roundSwitch();
