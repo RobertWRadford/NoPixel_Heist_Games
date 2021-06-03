@@ -52,7 +52,7 @@ For the wiring mini-game you will be shown 5 usb port slots labeled 1-5 in prope
   Answer:
     43215
 
-In order to succeed you will need to cable 6 servers this way!
+In order to succeed you will need to cable 4 servers this way!
 
 This is not a NoPixel minigame, it is an idea I had inspired by the hacking minigame combined with a real server system cabling procedure I've dealt with in the past. It inititially was made with 6 ports and cables and more time to memorize and answer, but in practice I found that it made variance too high on difficulty. I think going lower on the number of ports would be far too easy so 5 is probably the sweet spot unless the number of colors in the pool were reduced, and perhaps 6 could be brought back for an extra challenging version.
 
