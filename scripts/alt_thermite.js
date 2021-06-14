@@ -30,7 +30,7 @@ function startCharge(){
 			let row = document.createElement('tr');
 			for (j=0; j<6; j++){
 				let cell = document.createElement('td');
-				cell.className = `${i}-${j}`;
+				cell.className = `block ${i}-${j}`;
 				row.append(cell);
 			}
 			board.append(row);
@@ -49,7 +49,9 @@ function startCharge(){
 			let coord = pairs[Math.floor(Math.random()*36)];
 			if (!pairings.includes(coord)){
 				pairings.push(coord);
-				document.getElementsByClassName(coord)[0].innerText += `${pairings.length}`;
+				let element = document.getElementsByClassName(coord)[0];
+				element.className += ' highlighted';
+				element.innerText += `${pairings.length}`;
 			}
 		}
 
@@ -66,7 +68,7 @@ function startCharge(){
 				container.append(failureMessage);
 				let retryForm = document.createElement('form');
 				retryForm.className = 'retryForm';
-				retryForm.setAttribute('action', 'vault_thermite.html');
+				retryForm.setAttribute('action', 'alt_thermite.html');
 				container.append(retryForm);
 				let retryButton = document.createElement('button');
 				retryButton.className = 'retry';
@@ -74,7 +76,7 @@ function startCharge(){
 				retryForm.append(retryButton);
 				let homeForm = document.createElement('form');
 				homeForm.className = 'homeForm';
-				homeForm.setAttribute('action', 'index.html');
+				homeForm.setAttribute('action', 'fauxpixel.html');
 				container.append(homeForm);
 				let homeButton = document.createElement('button');
 				homeButton.className = 'home';
@@ -90,7 +92,7 @@ function startCharge(){
 				container.append(failureMessage);
 				let retryForm = document.createElement('form');
 				retryForm.className = 'retryForm';
-				retryForm.setAttribute('action', 'vault_thermite.html');
+				retryForm.setAttribute('action', 'alt_thermite.html');
 				container.append(retryForm);
 				let retryButton = document.createElement('button');
 				retryButton.className = 'retry';
@@ -98,7 +100,7 @@ function startCharge(){
 				retryForm.append(retryButton);
 				let homeForm = document.createElement('form');
 				homeForm.className = 'homeForm';
-				homeForm.setAttribute('action', 'index.html');
+				homeForm.setAttribute('action', 'fauxpixel.html');
 				container.append(homeForm);
 				let homeButton = document.createElement('button');
 				homeButton.className = 'home';
@@ -108,9 +110,9 @@ function startCharge(){
 
 			let correct = 0;
 			for (i=0;i<pairings.length;i++){
-                                let element = document.getElementsByClassName(pairings[i])[0];
+                let element = document.getElementsByClassName(pairings[i])[0];
 				element.classList += ' highlighted';
-                                element.innerText = '';
+                element.innerText = '';
 			}
 			let failCon = setTimeout(thermiteFailure, interval*1000);
 			for (i=0;i<pairings.length;i++){
@@ -118,20 +120,20 @@ function startCharge(){
 				let cell = document.getElementsByClassName(pairing)[0];
 				cell.addEventListener('click', (e) => {
 					e.preventDefault();
-					if (pairings[correct]==pairing)) {
+					if (pairings[correct]==pairing) {
 						if (document.getElementsByClassName(pairing)[0].className.includes('highlighted')) {
 							correct += 1;
-							document.getElementsByClassName(pairing)[0].className.remove('highlighted');
+							document.getElementsByClassName(pairing)[0].classList.remove('highlighted');
 						}
 						if (correct == 8) {
 							clearTimeout(failCon);
 							thermiteSuccess();
 						}
 					} else {
-                                               if (pairings.includes(pairing)) {    							wrong += 1;
+                        if (pairings.includes(pairing)) {
 							clearTimeout(failCon);
 							thermiteFailure();
-                                               }
+                        }
 					}
 				});
 			}

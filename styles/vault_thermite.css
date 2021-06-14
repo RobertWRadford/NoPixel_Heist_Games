@@ -4,7 +4,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border: solid max(.1vw, 1px) black;
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color: rgb(34,40,50);
 	width: max(25vw, 300px);
 	height: max(25vw, 300px);
@@ -19,7 +19,7 @@ button, input[type=submit] {
 	color: white;
 	font-size: max(1.8vw, 18px);
 	-webkit-text-stroke-width: max(.05vw,.5px);
-    -webkit-text-stroke-color: black;);
+    -webkit-text-stroke-color: black;
 	width: max(12vw, 120px);
 	padding: max(.25vw, 2.5px);
 	padding-top:max(.25vw, 2.5px);
@@ -97,6 +97,12 @@ input[type=submit]:hover {
 
 .block {
 	background-color: rgb(76,88,122);
+	font-size: max(2.25vw, 22.5px);
+	-webkit-text-stroke-width: max(.08vw,.8px);
+    -webkit-text-stroke-color: black;
+	text-align: center;
+	height: max(3.25vw, 40px);
+	width: max(3.25vw, 41px);
 }
 
 .block:hover {
