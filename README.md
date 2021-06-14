@@ -27,6 +27,10 @@ Once the thermite starts you will see a 6x6 (5x5 for jewelry thermite) grid of s
 
 I am not currently sure if the jewelry store thermite gives less time to click or allows for less inaccurate clicks before failing, if anyone knows please let me know!
 
+## FauxPixel games
+
+I decided that I would be adding more minigames that are slight spin-offs of NoPixel games or ideas for games that could be made in the NoPixel feel. So to prevent either a massive menu or confusing people that a new mini game may be out for something I would make a separate menu with the games not from NoPixel. FauxPixel randomly popped in my head as a funny play on words to denote its imitation work and not from the actual server.
+
 ### Wiring
 
 For the wiring mini-game you will be shown 5 usb port slots labeled 1-5 in proper left to right order and each of them will be labeled with a unique background-color and shape symbol pairing. You will have 6 seconds to remember what color/shape pair goes to what number, and then you will see 5 cables with a shape at the end of the cable and a color along the cable itself and you need to type out which order the cables are in within the time interval set (8 by default). For example:
@@ -57,6 +61,12 @@ In order to succeed you will need to cable 4 servers this way!
 This is not a NoPixel minigame, it is an idea I had inspired by the hacking minigame combined with a real server system cabling procedure I've dealt with in the past. It inititially was made with 6 ports and cables and more time to memorize and answer, but in practice I found that it made variance too high on difficulty. I think going lower on the number of ports would be far too easy so 5 is probably the sweet spot unless the number of colors in the pool were reduced, and perhaps 6 could be brought back for an extra challenging version.
 
 I think a really cool implementation of this minigame in NoPixel could be in the middle of either the Bobcat security or the FIB heists in order to open a door or access information on a hurry. Given the nature of cabling a server not using anything, it wouldn't require any additional tools and you would get unlimited attempts to succesfully cable the servers, but each failure raises an alert level and brings more armed guards out.
+
+### Alternate Thermite
+
+This game plays fairly similarly to the standard 6x6 vault thermite. Instead of 14 squares to remember in a field of 36 squares you're simply shown 8 squares numbered 1-8 for the same 5 seconds and they will be the only squares shown after, at which point you will have the same 8 seconds to click the squares in the proper sequence.
+
+I saw an old video of lab monkeys being trained to play a game where 6 numbers would appear on a black tv screen and then grey blocks would shortly replace the numbers, and if the monkey hit the blocks in the right order they gave them a banana. As I was watching it I was thinkink how similar it felt to the thermite minigame so I put together the basic form of it here. I'm thinking it may be more interesting to further blend the two and make all 36 squares highlight like the normal thermite game with 3 blank tile clicks allowed before failure, but still an incorrectly sequenced tile instantly fails. At the same time I think at that point the only distinguishing factor between the two games is sequence mattering amongst the tiles and less tiles to compensate for difficulty, which may be a bit boring. I also think balancing the difficulty of that version may prove too difficult.
 
 ## Project idea / Dev talk
 
