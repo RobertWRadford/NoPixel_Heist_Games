@@ -34,6 +34,8 @@ hr {
 	flex-flow: column;
 	padding:2%;
 	overflow: auto;
+	align-items: center;
+    align-content: center;
 }
 
 .selectionMenu {
@@ -41,7 +43,6 @@ hr {
 	width: 60%;
 	display: flex;
 	flex-flow: row wrap;
-	margin-left: 20%;
 	justify-content: space-evenly;
 }
 
@@ -74,6 +75,11 @@ input[type=submit]:hover {
     font-size: max(1.5vw, 15px);
     -webkit-text-stroke-width: max(.03vw,.3px);
     -webkit-text-stroke-color: black;
-    margin: 25px 0 0 50vw;
-    transform: translateX(-50%);
+}
+
+.repoLink:hover {
+	cursor: pointer;
+	color: black;
+	-webkit-text-stroke-width: max(.01vw,.1px);
+    -webkit-text-stroke-color: white;
 }
