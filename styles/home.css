@@ -71,10 +71,9 @@ input[type=submit]:hover {
 
 .repoLink {
     color: white;
-    text-align: center;
     font-size: max(1.5vw, 15px);
     -webkit-text-stroke-width: max(.03vw,.3px);
     -webkit-text-stroke-color: black;
-    margin: 5% 0 0 50%;
+    margin: 15% 0 0 50%;
     transform: translateX(-50%);
 }
