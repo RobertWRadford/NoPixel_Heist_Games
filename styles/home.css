@@ -74,6 +74,6 @@ input[type=submit]:hover {
     font-size: max(1.5vw, 15px);
     -webkit-text-stroke-width: max(.03vw,.3px);
     -webkit-text-stroke-color: black;
-    margin: 15% 0 0 50%;
+    margin: 25px 0 0 50vw;
     transform: translateX(-50%);
 }
