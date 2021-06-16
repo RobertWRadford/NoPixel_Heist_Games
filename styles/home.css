@@ -68,3 +68,12 @@ input[type=submit]:hover {
 	background-color: white;
 	cursor: pointer;
 }
+
+.repoLink {
+    color: white;
+    font-size: max(1vw, 10px);
+    -webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;
+    margin: 5% 0 0 50%;
+    transform: translateX(-50%);
+}
