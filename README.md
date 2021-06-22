@@ -21,6 +21,12 @@ The first step in the hacking process is seeing a mixed combination of 1-4 (1-5 
 
 By default you will have 5 (7 for vault) seconds to answer and press enter, running out of time to type or not hitting enter will result in a failure, and you will need to succesfully do that 7 (5 for vault) times to succesfully complete the hack.
 
+I made the custom hacking variant in response to the gold laptop hack being admittedly rather lackluster for most of the audience expectations, you can put bewteen 3 and 12 blocks on screen with between 1 and 11 prompts, and set how many rounds of that you would like to have to complete between 1 and 20. The start button will not work if you put a higher number in for prompts than blocks because the way it is coded has a pre-ordained singular prompt for each block on creation. You can also set exactly how many seconds you want to memorize the digit sequence as well as to input your answer, each going up to 240 seconds (4 minutes) maximum.
+
+I made it so that 6 blocks would comfortably fit on each row, however it's rather difficult to get things to populate with an even number of items in each row only when it overfills so there's some awkwardness to numbers like 7-9. I may come back to fix that or may leave it I'm not sure yet.
+
+I also might make a version of the hacks that randomly decides how many rounds you need to complete at the start, and then randomly decides how many blocks and how many prompts you get each round with a preset time given per block and prompt to mix things up more.
+
 ### Thermite
 
 Once the thermite starts you will see a 6x6 (5x5 for jewelry thermite) grid of squares, with 14 (10 for jewelery thermite) random squares highlighted. After 5 seconds the highlighted squares will blend back in with the other squares and by default you will have 8 seconds to click all of the previously highlighted tiles. If you click a correct square it will highlight again, and if you click an incorrect square it will highlight red. If you click 3 incorrect squares or run out of time the thermite attempt is a failure.
