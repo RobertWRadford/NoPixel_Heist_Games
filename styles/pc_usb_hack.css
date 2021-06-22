@@ -1,0 +1,151 @@
+#hackBlock {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	padding: max(1%, 10px) 0;
+	transform: translate(-50%, -20%);
+	border: solid max(.1vw, 1px) black;
+	border-radius: 5px;
+	background-color: rgb(34,40,50);
+	width: max(40vw, 300px);
+	height: auto;
+	min-height: max(25vw, 150px);
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header {
+    font-size: max(2vw, 20px);
+    font-weight: 900;
+    -webkit-text-stroke-width: max(.13vw,1.3px);
+  	-webkit-text-stroke-color: black;
+ 	text-align: center;
+  	margin: 0;
+}
+
+.parameter {
+  width: 85%;
+  background-color: rgba(64,70,80, .2);
+  padding: max(.7vw, 7px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 2%;
+}
+
+.parameter > label {
+    font-size: max(1.4vw, 14px);
+    -webkit-text-stroke-width: max(.1vw,1px);
+  	-webkit-text-stroke-color: black;
+}
+
+.parameter > input[type='number'] {
+    color: white;
+    width: 20%;
+    padding: max(.5vw, 5px);
+    background-color: rgb(76,88,122);
+    font-size: max(1.5vw, 15px);
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+button, input[type=submit] {
+	font-family: 'Bauhaus 93';
+	background-color: grey;
+	color: white;
+	font-size: max(1.6vw, 16px);
+	-webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-color: black;
+	width: max(9vw, 90px);
+	padding: max(.25vw, 2.5px);
+	border: solid max(.1vw,1px) black;
+	border-radius: 10px;
+	transform: translateX(-50%);
+	margin-left: 50%;
+}
+
+button:hover {
+	color: darkgrey;
+	background-color: white;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	color: darkgrey;
+	background-color: white;
+	cursor: pointer;
+}
+
+.settings {
+	margin-top:2%;
+	width: 100%;
+}
+
+.timing {
+	display: block;
+	margin-left: 50%;
+	transform: translate(-50%);
+	font-size: max(2vw, 20px);
+	-webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.interval {
+	margin-top: 5%;
+	margin-left: 50%;
+	transform: translate(-50%);
+	color: white;
+	width: max(3vw, 30px);
+	padding: 1.5vw;
+	background-color: rgb(76,88,122);
+	font-size: max(1.5vw, 15px);
+	border-radius: 10px;
+}
+
+.startButton {
+  margin: max(3.5%, 30px) 0 0 0;
+  transform: translate(0, -50%);
+}
+
+.middleText {
+	text-align: center;
+	width: 80%;
+	font-family: 'calibri';
+	margin-left: 10%;
+	font-size: max(4vw, 40px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;
+}
+
+.middleText.end {
+	font-size: max(1.8vw, 20px);
+}
+
+#answerInput {
+	text-align: center;
+    color: white;
+    margin-left: 15%;
+    margin-top: 1.5%;
+    width: 70%;
+    padding: max(.5vw, 5px);
+    background-color: transparent;
+    font-size: max(3vw, 30px);
+    outline: none;
+    border: 0;
+    border-bottom: max(.2vw, 2px) solid white;
+}

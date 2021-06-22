@@ -33,6 +33,10 @@ Once the thermite starts you will see a 6x6 (5x5 for jewelry thermite) grid of s
 
 I am not currently sure if the jewelry store thermite gives less time to click or allows for less inaccurate clicks before failing, if anyone knows please let me know!
 
+### PC USB Hack
+
+This is a very simple game, a 12-digit code will come on screen for 5 seconds by default, and then you will have 6 seconds to reinput that sequence as you remember it. I added options to change memorization time and answering time as desired between 1-60 seconds in .5 second steps.
+
 ## FauxPixel games
 
 I decided that I would be adding more minigames that are slight spin-offs of NoPixel games or ideas for games that could be made in the NoPixel feel. So to prevent either a massive menu or confusing people that a new mini game may be out for something I would make a separate menu with the games not from NoPixel. FauxPixel randomly popped in my head as a funny play on words to denote its imitation work and not from the actual server.
