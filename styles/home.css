@@ -11,7 +11,7 @@ h1 {
 }
 
 h3 {
-	margin-top: 2%;
+	margin: 1% 0 1% 0;
 	font-size: max(2vw, 20px);
 	-webkit-text-stroke-width: max(.1vw,1px);
     -webkit-text-stroke-color: black;
