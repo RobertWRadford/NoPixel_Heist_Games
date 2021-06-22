@@ -188,7 +188,7 @@ input[type=submit]:hover {
 .quizBox > p {
     position: absolute;
     z-index: 2;
-    font-size: max(2.5vw, 9.5px);
+    font-size: max(2.25vw, 8.5px);
     font-weight: 900;
     width: 12.5vw;
     text-align: center;
