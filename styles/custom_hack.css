@@ -192,7 +192,7 @@ input[type=submit]:hover {
     font-weight: 900;
     width: 12vw;
     text-align: center;
-    -webkit-text-stroke-width: max(.08vw,.8px);
+    -webkit-text-stroke-width: max(.05vw,.5px);
   	-webkit-text-stroke-color: black;
 }
 
