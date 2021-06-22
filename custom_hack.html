@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hacking</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/custom_hack.css">
+    </head>
+    <body>
+        <div id='hackBlock'>
+            <form class='settings'>
+                <h1 class='header'>Set parameters</h1>
+                <div class='parameter'>
+                    <label>Boxes: </label>
+                    <input type="number" id="blockCounter" min='3' max='12' value='4' step='1' required/>
+                </div>
+                <div class='parameter'>
+                    <label>Prompts: </label>
+                    <input type="number" id="promptCounter" min='1' max='11' value='2' step='1' required/>
+                </div>
+                <div class='parameter'>
+                    <label>Memorization time: </label>
+                    <input type="number" id="memTime" min='1' max='240' value='2' step='.5' required/>
+                </div>
+                <div class='parameter'>
+                    <label>Answer time: </label>
+                    <input type="number" id="ansTime" min='3' max='240' value='6' step='.5' required/>
+                </div>
+                <div class='parameter'>
+                    <label>Rounds: </label>
+                    <input type="number" id="roundCounter" min='1' max='20' value='5' step='1' required/>
+                </div>
+                <button class='startButton'>Start!</button>
+            </form>
+            <form action='index.html'>
+                <input type="submit" value="Home"/>
+            </form>
+        </div>
+        <script src='scripts/custom_hack.js' type="text/javascript"></script>
+    </body>
+</html>
