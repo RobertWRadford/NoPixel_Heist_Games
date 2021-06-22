@@ -49,7 +49,7 @@
 
 .parameter > label {
     font-size: max(1.4vw, 14px);
-    -webkit-text-stroke-width: max(.1vw,1px);
+    -webkit-text-stroke-width: max(.07vw,.7px);
   	-webkit-text-stroke-color: black;
 }
 
@@ -68,7 +68,7 @@ button, input[type=submit] {
 	background-color: grey;
 	color: white;
 	font-size: max(1.6vw, 16px);
-	-webkit-text-stroke-width: max(.1vw,1px);
+	-webkit-text-stroke-width: max(.08vw,.8px);
     -webkit-text-stroke-color: black;
 	width: max(9vw, 90px);
 	padding: max(.25vw, 2.5px);
@@ -127,8 +127,8 @@ input[type=submit]:hover {
 	width: 80%;
 	font-family: 'calibri';
 	margin-left: 10%;
-	font-size: max(4vw, 40px);
-	-webkit-text-stroke-width: max(.05vw,.5px);
+	font-size: max(3.6vw, 36px);
+	-webkit-text-stroke-width: max(.06vw,.6px);
     -webkit-text-stroke-color: black;
 }
 

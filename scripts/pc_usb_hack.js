@@ -58,6 +58,7 @@ function startHack() {
 			let answerInput = document.createElement('input');
 			answerInput.setAttribute('id', 'answerInput');
 			answerInput.setAttribute('autocomplete', 'off');
+			answerInput.setAttribute('max-length', '12');
 			answerForm.append(answerInput);
 			let failureCon = setTimeout(setEnd, ansTime*1000);
 			answerForm.addEventListener('submit', (e) => {
