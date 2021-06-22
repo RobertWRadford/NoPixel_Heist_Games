@@ -2,7 +2,7 @@
     border: solid max(.1vw, 1px) black;
     border-radius: 10px;
     margin: auto;
-    margin-top: 1%;
+    margin-top: .5%;
     background-color: rgb(34,40,50);
     width: max(90vw, 300px);
     height: auto;
@@ -10,7 +10,7 @@
     display: flex;
   	flex-direction: column;
  	justify-content: center;
- 	padding: .5% 0 1% 0;
+ 	padding: 0 0 2% 0;
 }
 
 button, input[type=submit] {
@@ -118,7 +118,7 @@ input[type=submit]:hover {
     width: 20%;
     margin: auto;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
     font-size: max(2vw, 14px);
 }
 
@@ -132,22 +132,22 @@ input[type=submit]:hover {
     display: flex;
     width: 99%;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .digitPlace, .quizBox {
     text-align: center;
     font-family: 'calibri';
-    width: 12vw;
-    height: 12vw;
-    margin: .6vw 0 0 .6vw;
+    width: 12.5vw;
+    height: 12.5vw;
+    margin: 1.5vw 0 0 1vw;
     border: solid 2px black;
 }
 
 .digitPlace {
     background-color: rgb(76,88,122);
     color: white;
-    line-height: 12vw;
+    line-height: 12.5vw;
     font-size: 7vw;
     animation: shrink calc(var(--duration) * 1s);
     animation-delay: calc(var(--duration) * 1s);
@@ -163,8 +163,8 @@ input[type=submit]:hover {
     z-index: 1;
     width: 9.5vw;
     height: 9.5vw;
-    margin-left: 1.175vw;
-    margin-top: 1.175vw;
+    margin-left: 1.425vw;
+    margin-top: 1.425vw;
     border: solid .15vw black;
 }
 
@@ -182,30 +182,34 @@ input[type=submit]:hover {
 
 .RECTANGLE {
     height: 5vw;
-    margin-top: 3.425vw;
+    margin-top: 3.675vw;
 }
 
 .quizBox > p {
     position: absolute;
     z-index: 2;
-    font-size: max(2vw, 8px);
+    font-size: max(2.5vw, 9.5px);
     font-weight: 900;
-    width: 12vw;
+    width: 12.5vw;
     text-align: center;
     -webkit-text-stroke-width: max(.08vw,.8px);
   	-webkit-text-stroke-color: black;
 }
 
 .colorText {
-    margin-top: 2.25vw;
+    margin-top: 3.25vw;
+    transform: translateY(-50%);
 }
 
-.numberText {
-    margin-top: 4.75vw;
+.quizBox > p.numberText {
+    margin-top: 6.25vw;
+    transform: translateY(-50%);
+    font-size: max(3.5vw,12.5px);
 }
 
 .shapeText {
-    margin-top: 7.25vw;
+    margin-top: 9.25vw;
+    transform: translateY(-50%);
 }
 
 .round-time-bar {
@@ -247,7 +251,7 @@ input[type=submit]:hover {
 }
 
 #answerSection {
-    margin-top: 4%;
+    margin-top: 4.25%;
     width: 100%;
 }
 
@@ -256,9 +260,9 @@ input[type=submit]:hover {
     margin-left: 10%;
     display: block;
     text-align: center;
-    font-size: max(1.2vw, 10px);
-    font-weight: 700;
-    letter-spacing: .6px;
+    font-size: max(1.3vw, 10px);
+    font-weight: 500;
+    letter-spacing: .5px;
     font-family: 'calibri';
 }
 
@@ -269,7 +273,7 @@ input[type=submit]:hover {
     width: max(40%, 125px);
     padding: max(.5vw, 5px);
     background-color: transparent;
-    font-size: max(2vw, 10px);
+    font-size: max(1.4vw, 12px);
     outline: none;
     border: 0;
     border-bottom: max(.2vw, 2px) solid white;
