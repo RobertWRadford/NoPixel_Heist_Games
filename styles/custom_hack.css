@@ -77,7 +77,7 @@ input[type=submit]:hover {
 
 .parameter > label {
     font-size: max(1.8vw, 18px);
-    -webkit-text-stroke-width: max(.13vw,1.3px);
+    -webkit-text-stroke-width: max(.08vw,.8px);
   	-webkit-text-stroke-color: black;
 }
 
@@ -141,6 +141,7 @@ input[type=submit]:hover {
     width: 12vw;
     height: 12vw;
     margin: .6vw 0 0 .6vw;
+    border: solid 2px black;
 }
 
 .digitPlace {
@@ -156,11 +157,6 @@ input[type=submit]:hover {
     from {font-size: 7vw;}
     to {font-size: 0px;}
 }
-
-.quizBox {
-    border: solid 2px black;
-}
-
 
 .internalShape {
     position: absolute;
@@ -192,11 +188,11 @@ input[type=submit]:hover {
 .quizBox > p {
     position: absolute;
     z-index: 2;
-    font-size: max(2vw, 10px);
+    font-size: max(2vw, 8px);
     font-weight: 900;
     width: 12vw;
     text-align: center;
-    -webkit-text-stroke-width: max(.11vw,.7px);
+    -webkit-text-stroke-width: max(.08vw,.8px);
   	-webkit-text-stroke-color: black;
 }
 
