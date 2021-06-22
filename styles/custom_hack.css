@@ -128,7 +128,7 @@ input[type=submit]:hover {
 }
 
 #hackBlocksSection {
-    margin: .5% 0 0 .5%;
+    margin: max(.5%,5px) 0 0 max(.5%,5px);
     display: flex;
     width: 99%;
     flex-flow: row wrap;
@@ -141,7 +141,7 @@ input[type=submit]:hover {
     width: 12.5vw;
     height: 12.5vw;
     margin: 1.5vw 0 0 1vw;
-    border: solid 2px black;
+    border: solid 1px black;
 }
 
 .digitPlace {
@@ -192,7 +192,7 @@ input[type=submit]:hover {
     font-weight: 900;
     width: 12.5vw;
     text-align: center;
-    -webkit-text-stroke-width: max(.08vw,.8px);
+    -webkit-text-stroke-width: max(.06vw,.6px);
   	-webkit-text-stroke-color: black;
 }
 
