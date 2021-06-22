@@ -84,6 +84,7 @@ input[type=submit]:hover {
 .parameter > input[type='number'] {
     color: white;
     padding: max(.5vw, 5px);
+    width: 20%;
     background-color: rgb(76,88,122);
     font-size: max(1.5vw, 15px);
     border-radius: 10px;
