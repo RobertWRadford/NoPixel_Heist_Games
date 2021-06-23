@@ -138,6 +138,8 @@ function startHack(){
 		timerSection.setAttribute('id', 'timerSection');
 		let hackBlocksSection = document.createElement('section');
 		hackBlocksSection.setAttribute('id', 'hackBlocksSection');
+		let timebarDiv = document.createElement('div');
+		timebarDiv.className = 'timebarContainer';
 		let timebarLeft = document.createElement('div');
 		let timebarRight = document.createElement('div');
 		timebarLeft.className = 'round-time-bar left';
@@ -148,7 +150,7 @@ function startHack(){
 		answerSection.setAttribute('id', 'answerSection');
 
 		container.innerHTML = '';
-		container.style.display = 'block';
+		container.setAttribute('style', 'justify-content: flex-start');
 		container.append(timerSection);
 		container.append(hackBlocksSection);
 
@@ -177,11 +179,13 @@ function startHack(){
 
 		function hackPhase(){
 
+			container.setAttribute('style', 'justify-content: space-evenly');
 			let audio = new Audio('assets/timer.wav');
 			audio.loop = true;
 
 			function setEnd(middleText){
 				container.innerHTML = '';
+				container.setAttribute('style', 'justify-content: center');
 				let middleMessage = document.createElement('p');
 				middleMessage.className = 'middleText end';
 				middleMessage.innerText = middleText;
@@ -203,7 +207,6 @@ function startHack(){
 			}
 
 			function failHack(){
-				container.style.display = 'flex';
 				audio.pause();
 				setEnd('SYSTEM DID NOT ACCEPT YOUR ANSWERS');
 			}
@@ -225,7 +228,6 @@ function startHack(){
 			}
 
 			function checkAnswer(){
-				container.style.display = 'flex';
 				input = document.getElementById('answerInput').value;
 				correctAnswer = answers.join(' ');
 				if (input.toUpperCase() == correctAnswer) {
@@ -244,11 +246,12 @@ function startHack(){
 				puzzBlocks[i].changeBlock();
 			}
 
-			container.append(timebarLeft);
-			container.append(timebarRight);
+			container.append(timebarDiv);
+			timebarDiv.append(timebarLeft);
+			timebarDiv.append(timebarRight);
 			let hiddenBar = document.createElement('div');
 			hiddenBar.className = 'hiding-bar';
-			container.append(hiddenBar);
+			timebarDiv.append(hiddenBar);
 			container.append(answerSection);
 
 
