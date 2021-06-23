@@ -8,14 +8,14 @@ body {
     background-color: rgb(34,40,50);
     width: max(99.8vw, 300px);
     height: auto;
-    min-height: min(55vw, 90vh);
+    min-height: min(50vw, 90vh);
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
     padding: 1% 0;
-    margin: max(1%, 5px) 0;
+    margin: max(.5%, 5px) 0;
 }
 
 button, input[type=submit] {
