@@ -56,6 +56,7 @@ function puzzBlock(){
 		}
 	}
 	puzzBlocks.push(this);
+	this.index = puzzBlocks.length;
 
 }
 
@@ -76,6 +77,9 @@ puzzBlock.prototype.digitBlock = function() {
 	this.block.innerText = String(this.digit);
 	let animationTime = Math.ceil(memTime/2);
 	this.block.setAttribute('style', `--duration: ${animationTime};`);
+	if (this.index != 1 && this.index != 7) {
+		this.block.style.marginLeft = "1vw";
+	}
 	return this.block;
 }
 
