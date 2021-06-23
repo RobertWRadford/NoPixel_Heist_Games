@@ -8,7 +8,7 @@ body {
     background-color: rgb(34,40,50);
     width: max(99.8vw, 300px);
     height: auto;
-    min-height: min(50vw, 90vh);
+    min-height: min(55vw, 90vh);
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -219,7 +219,7 @@ input[type=submit]:hover {
 .round-time-bar {
     position: absolute;
     margin-top: 1.5%;
-    width: 40%;
+    width: 40.1%;
     overflow: hidden;
     height: 5px;
     animation: roundtime calc(var(--duration) * 1s) linear forwards;
@@ -244,7 +244,7 @@ input[type=submit]:hover {
 
 .round-time-bar.right {
     z-index: 2;
-    left:50%;
+    left:49.9%;
     transform-origin: left center;
 }
 

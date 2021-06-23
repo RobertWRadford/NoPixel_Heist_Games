@@ -78,7 +78,7 @@ puzzBlock.prototype.digitBlock = function() {
 	let animationTime = Math.ceil(memTime/2);
 	this.block.setAttribute('style', `--duration: ${animationTime};`);
 	if (this.index != 1 && this.index != 7) {
-		this.block.style.marginLeft = "1vw";
+		this.block.style.marginLeft = ".6vw";
 	}
 	return this.block;
 }
