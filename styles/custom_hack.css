@@ -151,13 +151,13 @@ input[type=submit]:hover {
     background-color: rgb(76,88,122);
     color: white;
     line-height: 15.5vw;
-    font-size: 10vw;
+    font-size: 8.5vw;
     animation: shrink calc(var(--duration) * 1s);
     animation-delay: calc(var(--duration) * 1s);
 }
 
 @keyframes shrink {
-    from {font-size: 10vw;}
+    from {font-size: 8.5vw;}
     to {font-size: 0px;}
 }
 
