@@ -143,11 +143,11 @@ function startHack(){
 		let hackBlocksSection = document.createElement('section');
 		hackBlocksSection.setAttribute('id', 'hackBlocksSection');
 		if (blockCounter<=4) {
-			hackBlocksSection.setAttribute('width', '75%');
+			hackBlocksSection.style.width = '75%';
 		} else if (blockCounter==5) {
-			hackBlocksSection.setAttribute('width', '85%');
+			hackBlocksSection.style.width = '85%';
 		} else {
-			hackBlocksSection.setAttribute('width', '100%');
+			hackBlocksSection.style.width = '100%';
 		}
 		let timebarDiv = document.createElement('div');
 		timebarDiv.className = 'timebarContainer';
