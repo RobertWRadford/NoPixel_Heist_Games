@@ -143,7 +143,7 @@ function startHack(){
 		let hackBlocksSection = document.createElement('section');
 		hackBlocksSection.setAttribute('id', 'hackBlocksSection');
 		if (blockCounter<=4) {
-			hackBlocksSection.setAttribute('width', '70%');
+			hackBlocksSection.setAttribute('width', '75%');
 		} else if (blockCounter==5) {
 			hackBlocksSection.setAttribute('width', '85%');
 		} else {
