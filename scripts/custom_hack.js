@@ -142,6 +142,13 @@ function startHack(){
 		timerSection.setAttribute('id', 'timerSection');
 		let hackBlocksSection = document.createElement('section');
 		hackBlocksSection.setAttribute('id', 'hackBlocksSection');
+		if (blockCounter<=4) {
+			hackBlocksSection.setAttribute('width', '70%');
+		} else if (blockCounter==5) {
+			hackBlocksSection.setAttribute('width', '85%');
+		} else {
+			hackBlocksSection.setAttribute('width', '100%');
+		}
 		let timebarDiv = document.createElement('div');
 		timebarDiv.className = 'timebarContainer';
 		let timebarLeft = document.createElement('div');
