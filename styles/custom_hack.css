@@ -206,17 +206,17 @@ input[type=submit]:hover {
 
 .quizBox > p.colorText {
     margin-top: 4.5vw;
-    font-size: max(3vw, 12px);
+    font-size: 2.7vw;
 }
 
 .quizBox > p.numberText {
     margin-top: 7.75vw;
-    font-size: max(4vw,16px);
+    font-size: 3.6vw;
 }
 
 .quizBox > p.shapeText {
     margin-top: 11.1vw;
-    font-size: 2.7vw;
+    font-size: 2.5vw;
 }
 
 .round-time-bar {
