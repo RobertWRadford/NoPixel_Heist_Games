@@ -41,6 +41,17 @@ This is a very simple game, a 12-digit code will come on screen for 5 seconds by
 
 I decided that I would be adding more minigames that are slight spin-offs of NoPixel games or ideas for games that could be made in the NoPixel feel. So to prevent either a massive menu or confusing people that a new mini game may be out for something I would make a separate menu with the games not from NoPixel. FauxPixel randomly popped in my head as a funny play on words to denote its imitation work and not from the actual server.
 
+The prior paragraph was origin of the name but following I had a fun project idea and decided to make a web app and perhaps a mobile app for it called FauxPixel. It is already live at FauxPixel.com and you can get a good idea of what it will be like, however it is very early into development (1 and a half afternoons after my day job spent) and I will be out of town away from my desktop until the 11th so I won't be making further progress until then. Soon after that I will make a proper home page with a summary of the app and patch notes, a tutorial page, add a way to just play the minigames onto that site, and make more variance in the event log lines for each job to help prevent it from being too repetitive. I will also be adding the lockpicking minigame and putting it at the start of robberies and oxy runs as well as custom minigames for robbing houses, Oxy runs, and escaping in a police chase to make all outcomes non-random. Of course I will also be adding in security truck jobs, bobcat, and the lower vault as well but I haven't figured out what I want to do for the truck/bobcat minigames, and I haven't seen much of the yacht heist yet but when that's more flushed out it will make it in too.
+
+The things I would like to add in but am less certain if I will is:
+<ol> 
+  <li>making it possible to see other active players and send messages</li> 
+  <li>make heists multi-player based and requiring you find a crew to go with</li>
+  <li>add street racing with a simple multiplayer game for it</li>
+  <li>add custom cars for purchase that you can use in street racing or police escapes for altered performance</li>
+  <li>add custom items that changes hacking/thermite settings to give more time or something like that for those who are struggling but want to play through</li>
+</ol>
+
 ### Wiring
 
 For the wiring mini-game you will be shown 5 usb port slots labeled 1-5 in proper left to right order and each of them will be labeled with a unique background-color and shape symbol pairing. You will have 6 seconds to remember what color/shape pair goes to what number, and then you will see 5 cables with a shape at the end of the cable and a color along the cable itself and you need to type out which order the cables are in within the time interval set (8 by default). For example:
