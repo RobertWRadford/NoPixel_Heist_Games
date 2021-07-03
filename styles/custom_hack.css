@@ -50,7 +50,7 @@ input[type=submit]:hover {
 }
 
 .settings {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +69,7 @@ input[type=submit]:hover {
 }
 
 .parameter {
-  width: max(40%, 250px);
+  width: max(40%, 315px);
   background-color: rgba(64,70,80, .2);
   padding: max(.7vw, 7px);
   border-radius: 10px;
