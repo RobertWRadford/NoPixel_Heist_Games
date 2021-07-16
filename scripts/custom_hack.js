@@ -1,6 +1,6 @@
 let container = document.getElementById('hackBlock');
 let starter = document.getElementsByClassName('settings')[0];
-let blockCounter;
+let blockCounter = 4;
 let promptCounter;
 let memTime;
 let ansTime;
@@ -57,7 +57,6 @@ function puzzBlock(){
 	}
 	puzzBlocks.push(this);
 	this.index = puzzBlocks.length;
-
 }
 
 puzzBlock.prototype.resolve = function() {
@@ -77,8 +76,18 @@ puzzBlock.prototype.digitBlock = function() {
 	this.block.innerText = String(this.digit);
 	let animationTime = Math.ceil(memTime/2);
 	this.block.setAttribute('style', `--duration: ${animationTime};`);
-	if (this.index != 1 && this.index != 7) {
-		this.block.style.marginLeft = ".6vw";
+	if (blockCounter<=4 || blockCounter==7 || blockCounter==8) {
+		if (this.index != 1 && this.index != 5) {
+			this.block.style.marginLeft = ".6vw";
+		}
+	} else if (blockCounter<=10 && blockCounter!=6) {
+		if (this.index != 1 && this.index != 6) {
+			this.block.style.marginLeft = ".6vw";
+		}
+	} else {
+		if (this.index != 1 && this.index != 7) {
+			this.block.style.marginLeft = ".6vw";
+		}
 	}
 	return this.block;
 }
@@ -142,9 +151,9 @@ function startHack(){
 		timerSection.setAttribute('id', 'timerSection');
 		let hackBlocksSection = document.createElement('section');
 		hackBlocksSection.setAttribute('id', 'hackBlocksSection');
-		if (blockCounter<=4) {
+		if (blockCounter<=4 || blockCounter==7 || blockCounter==8) {
 			hackBlocksSection.style.width = '75%';
-		} else if (blockCounter==5) {
+		} else if (blockCounter<=10 && blockCounter!=6) {
 			hackBlocksSection.style.width = '85%';
 		} else {
 			hackBlocksSection.style.width = '100%';
@@ -173,6 +182,10 @@ function startHack(){
 		for (i=0; i<blockCounter;i++){
 			let puzz = new puzzBlock();
 			hackBlocksSection.append(puzz.digitBlock());
+		}
+		if (blockCounter <= 6){
+			timerSection.style.marginTop = '2.25%';
+			hackBlocksSection.style.marginTop = '2.25%';
 		}
 
 		function updateTimer(){
@@ -251,6 +264,11 @@ function startHack(){
 				} else {
 					failHack();
 				}
+			}
+
+			if (blockCounter <= 6){
+				timerSection.style.marginTop = '0px';
+				hackBlocksSection.style.marginTop = '0px';
 			}
 
 			for (i=0; i<puzzBlocks.length; i++){

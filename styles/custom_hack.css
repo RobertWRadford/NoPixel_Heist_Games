@@ -10,13 +10,13 @@ body {
     background-color: rgb(34,40,50);
     width: max(97vw, 300px);
     height: auto;
-    min-height: min(50vw, 90vh);
+    min-height: max(min(40vw, 90vh), 250px);
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1% 0;
+    padding: 1% 0 0 0;
     margin: max(.5%, 5px) 0;
 }
 
@@ -103,7 +103,7 @@ input[type=submit]:hover {
 }
 
 .homeButton {
-    margin-top: 5px;
+    margin-top: max(1.2vw, 12px);
 }
 
 .home, .retry {
@@ -156,13 +156,13 @@ input[type=submit]:hover {
     background-color: rgb(76,88,122);
     color: white;
     line-height: 15.5vw;
-    font-size: 8.5vw;
+    font-size: 7.5vw;
     animation: shrink calc(var(--duration) * 1s);
     animation-delay: calc(var(--duration) * 1s);
 }
 
 @keyframes shrink {
-    from {font-size: 8.5vw;}
+    from {font-size: 7.5vw;}
     to {font-size: 0px;}
 }
 
