@@ -216,7 +216,7 @@ function startPicking() {
 	    }
 
 	    if (angle <= -70 || angle >= -25) {
-	    	angle = -60;
+	    	angle = -55;
 	    }
 
 	    ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
