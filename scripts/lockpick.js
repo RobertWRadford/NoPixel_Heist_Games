@@ -176,7 +176,7 @@ function startPicking() {
 					renderProgress(time);
 				}
 			}, 1);
-        }, 250);
+        }, 350);
         
         function checkAnswer(e){
 	        e.preventDefault();
