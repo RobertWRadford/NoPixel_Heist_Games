@@ -1,17 +1,21 @@
 #pickBlock {
     position: absolute;
-    top: 50%;
+    top: 1%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     border: solid max(.1vw, 1px) black;
     border-radius: 5px;
     background-color: rgb(34,40,50);
-    width: max(25vw, 300px);
-    height: max(25vw, 300px);
+    width: max(25vw, 250px);
+    height: max(25vw, 250px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.prompt {
+    display: none;
 }
 
 button, input[type=submit] {

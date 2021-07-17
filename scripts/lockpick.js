@@ -174,8 +174,6 @@ function startPicking() {
 
     ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
 
-    console.log(ansStart, ansEnd);
-
     spun.style.transform = `rotate(${angle}deg)`;
 
 	let progression = setInterval(()=>{
@@ -203,5 +201,6 @@ function startPicking() {
 
 starter.addEventListener('click', (e) => {
 	e.preventDefault();
+	document.getElementsByClassName('prompt')[0].focus();
 	startPicking();
 });
