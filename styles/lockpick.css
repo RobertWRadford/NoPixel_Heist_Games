@@ -15,7 +15,10 @@
 }
 
 .prompt {
-    display: none;
+    height: 0;
+    width: 0;
+    border: 0;
+    padding: 0;
 }
 
 button, input[type=submit] {
