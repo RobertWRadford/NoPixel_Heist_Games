@@ -208,7 +208,7 @@ function startPicking() {
 			} else if (time < ansStart || time > ansEnd) {
 				setEnd(false);
 			} else {
-				succeses+=1;
+				successes+=1;
                                 if (successes==5){
                                     setEnd(true);
                                 } else {
