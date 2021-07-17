@@ -212,7 +212,7 @@ function startPicking() {
                                 if (successes==5){
                                     setEnd(true);
                                 } else {
-                                    pickLock();
+                                    startPicking();
                                 }
 			}
 		});
