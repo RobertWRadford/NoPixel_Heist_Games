@@ -1,5 +1,6 @@
 let container = document.getElementById('pickBlock');
 let starter = document.getElementsByClassName('startButton')[0];
+let promptInp = document.getElementsByClassName('prompt')[0];
 let time = 0;
 let pickKey = Math.ceil(Math.random()*4)
 let ansStart;
@@ -185,7 +186,7 @@ function startPicking() {
 	    spun.style.transform = `rotate(${angle}deg)`;
 
 		let progression = setInterval(()=>{
-			time+=.35;
+			time+=.3;
 			if (time > 100){
 				clearInterval(progression);
 				setEnd(false);
@@ -194,10 +195,12 @@ function startPicking() {
 			}
 		}, 1);
 
-		document.addEventListener('keydown', (e) => {
+		promptInp.addEventListener('input', (e) => {
 			e.preventDefault();
 			clearInterval(progression);
-			if (e.key != `${pickKey}`){
+			let inp = promptInp.value;
+			promptInp.remove();
+			if (inp.slice(-1) != `${pickKey}`){
 				setEnd(false);
 			} else if (time < ansStart || time > ansEnd) {
 				setEnd(false);
@@ -205,6 +208,8 @@ function startPicking() {
 				setEnd(true);
 			}
 		});
+
+		promptInp.focus();
 	}
 
 	setTimeout(pickLock, 1000);	
@@ -212,6 +217,6 @@ function startPicking() {
 
 starter.addEventListener('click', (e) => {
 	e.preventDefault();
-	document.getElementsByClassName('prompt')[0].focus();
+	promptInp.focus();
 	startPicking();
 });
