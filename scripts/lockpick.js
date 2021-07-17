@@ -3,7 +3,7 @@ let starter = document.getElementsByClassName('startButton')[0];
 let promptInp = document.getElementsByClassName('prompt')[0];
 let time = 0;
 let successes = 0;
-let pickKey = Math.ceil(Math.random()*4)
+let pickKey;
 let ansStart;
 let ansEnd;
 
@@ -18,6 +18,7 @@ function startPicking() {
 	function pickLock(){
 
 		container.innerHTML = '';
+                pickKey = Math.ceil(Math.random()*4);
 		let pickBox = document.createElement('div');
 		pickBox.className = 'pickBox';
 		container.append(pickBox);
@@ -209,10 +210,20 @@ function startPicking() {
 				setEnd(false);
 			} else {
 				successes+=1;
-                                if (successes==5){
+                                if (successes==5) {
                                     setEnd(true);
                                 } else {
-                                    startPicking();
+                                    spun.style.transform = 'rotate(0deg)';
+                                    if (time<=25){
+                                        document.getElementsByClassName('animate-0-25-b')[0].style.transform = 'rotate(0deg)';
+                                    } else if (time<=50) {
+                                        document.getElementsByClassName('animate-25-50-b')[0].style.transform = 'rotate(0deg)';
+                                    } else if (time<=75) {
+                                        document.getElementsByClassName('animate-50-75-b')[0].style.transform = 'rotate(0deg)';
+                                    } else {
+                                        document.getElementsByClassName('animate-75-100-b')[0].style.transform = 'rotate(0deg)';
+                                    }
+                                    pickLock();
                                 }
 			}
 		});
