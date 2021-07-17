@@ -18,7 +18,7 @@ function startPicking() {
 	function pickLock(){
 
 		container.innerHTML = '';
-                pickKey = Math.ceil(Math.random()*4);
+        pickKey = Math.ceil(Math.random()*4);
 		let pickBox = document.createElement('div');
 		pickBox.className = 'pickBox';
 		container.append(pickBox);
@@ -118,7 +118,7 @@ function startPicking() {
 
 		function setEnd(result){
 			container.innerHTML = '';
-                        promptInp.remove();
+            promptInp.remove();
 			let failureMessage = document.createElement('p');
 			failureMessage.className = 'middleText fail';
 			failureMessage.innerText = result ? 'SUCCESFULLY UNLOCKED' : 'BROKE YOUR LOCKPICK';
@@ -163,37 +163,42 @@ function startPicking() {
 		        document.getElementsByClassName('animate-75-100-b')[0].style.transform = `rotate(${angle}deg)`;
 		    }
 		}
-            var progression;
-            setTimeout(()=>{
-		progression = setInterval(()=>{
-			time+=.3;
-			if (time > 100){
-				clearInterval(progression);
+        
+        var progression;
+        setTimeout(()=>{
+			progression = setInterval(()=>{
+				time+=.35;
+				if (time > 100){
+					clearInterval(progression);
+					setEnd(false);
+				} else {
+					renderProgress(time);
+				}
+			}, 1);
+        }, 200);
+        
+        function checkAnswer(e){
+	        e.preventDefault();
+			clearInterval(progression);
+			let inp = promptInp.value;
+			console.log(inp.slice(-1), pickKey);
+			console.log(time, ansStart, ansEnd);
+			if (inp.slice(-1) != `${pickKey}`){
+		    	setEnd(false);
+			} else if (time < ansStart || time > ansEnd) {
 				setEnd(false);
 			} else {
-				renderProgress(time);
-			}
-		}, 1);
-            }, 250);
-            function checkAnswer(e){
-	        e.preventDefault();
-		clearInterval(progression);
-		let inp = promptInp.value;
-		if (inp.slice(-1) != `${pickKey}`){
-		    setEnd(false);
-		} else if (time < ansStart || time > ansEnd) {
-			setEnd(false);
-		} else {
-		    successes+=1;
-                    if (successes==5) {
-                        setEnd(true);
-                    } else {
-                        time=0;
-                        promptInp.removeEventListener('input', checkAnswer);
-                        setTimeout(pickLock, 100);
-                    }
+		    	successes+=1;
+                if (successes==5) {
+                    setEnd(true);
+                } else {
+                    time=0;
+                    promptInp.removeEventListener('input', checkAnswer);
+                    setTimeout(pickLock, 100);
                 }
+            }
 	    }
+
 	    if (ansArc>=25 && ansArc<50){
 	    	ansStart = 25;
 	        var angle = -90 + ((ansArc-25)/100)*360;
@@ -210,8 +215,8 @@ function startPicking() {
 	        var spun = document.getElementsByClassName('animate-75-100-d')[0];
 	    }
 
-	    if (angle <= -60 || angle >= -25) {
-	    	angle = -40;
+	    if (angle <= -70 || angle >= -25) {
+	    	angle = -60;
 	    }
 
 	    ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
