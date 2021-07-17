@@ -213,16 +213,7 @@ function startPicking() {
                                 if (successes==5) {
                                     setEnd(true);
                                 } else {
-                                    spun.style.transform = 'rotate(0deg)';
-                                    if (time<=25){
-                                        document.getElementsByClassName('animate-0-25-b')[0].style.transform = 'rotate(0deg)';
-                                    } else if (time<=50) {
-                                        document.getElementsByClassName('animate-25-50-b')[0].style.transform = 'rotate(0deg)';
-                                    } else if (time<=75) {
-                                        document.getElementsByClassName('animate-50-75-b')[0].style.transform = 'rotate(0deg)';
-                                    } else {
-                                        document.getElementsByClassName('animate-75-100-b')[0].style.transform = 'rotate(0deg)';
-                                    }
+                                    time=0;
                                     pickLock();
                                 }
 			}
