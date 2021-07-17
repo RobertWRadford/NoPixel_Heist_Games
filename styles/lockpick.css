@@ -42,6 +42,10 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
+.middleText.fail {
+    font-size: max(1.6vw, 16px);
+}
+
 .pickBox {
     height: 70%;
     width: 70%;

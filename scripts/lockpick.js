@@ -168,7 +168,7 @@ function startPicking() {
         var spun = document.getElementsByClassName('animate-75-100-d')[0];
     }
 
-    if (angle <= -60 || angle >= -30) {
+    if (angle <= -70 || angle >= -20) {
     	angle = -45;
     }
     ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);

@@ -6,6 +6,12 @@
 
 Before you press start on any puzzle you can change the puzzle completion timer if you like either to challenge yourself to extreme mode or to give yourself extra time to practice. 
 
+### Lockpick
+
+When you press start you will immediately see a circle with a number in the center appear. The circle will have a progressing bar and a green wedge somewhere on the perimeter. To succesfully pick the lock you need to hit the indicated number when the progression bar is inside of the green wedge. If you miss the timing or you press the wrong key you will fail the lockpick.
+
+My remake of this minigame has a big flaw that the wedges can only start at 90 degree intervals around the circle due to the way progression arcs are typically built using 4 invisible turning squares. I don't personally know another way to do this and couldn't find a solution online so if you have a suggestion for that let me know please!
+
 ### Hacking
 
 The first step in the hacking process is seeing a mixed combination of 1-4 (1-5 for the vault hack) in four (five for vault) seperate blocks and you will need to memorize which block they are in within 2 seconds. After that the blocks will change to have a random background color, a random shape with its own random background color, text of a random shape as well as text of a random color with their own background color, and a random number with it's own background color as well in addition to a question prompt with two questions with a digit referring to the previous block with that digit, and asking for one of:
