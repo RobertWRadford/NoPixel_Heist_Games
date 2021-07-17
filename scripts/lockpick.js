@@ -184,7 +184,7 @@ function startPicking() {
 	    ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
 
 	    spun.style.transform = `rotate(${angle}deg)`;
-
+            setTimeout(()=>{
 		let progression = setInterval(()=>{
 			time+=.3;
 			if (time > 100){
@@ -194,6 +194,7 @@ function startPicking() {
 				renderProgress(time);
 			}
 		}, 1);
+            }, 100);
 
 		promptInp.addEventListener('input', (e) => {
 			e.preventDefault();
