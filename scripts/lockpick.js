@@ -168,9 +168,10 @@ function startPicking() {
         var spun = document.getElementsByClassName('animate-75-100-d')[0];
     }
 
-    if (angle <= -70 || angle >= -20) {
-    	angle = -45;
+    if (angle <= -60 || angle >= -25) {
+    	angle = -40;
     }
+
     ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
 
     console.log(ansStart, ansEnd);
@@ -178,7 +179,7 @@ function startPicking() {
     spun.style.transform = `rotate(${angle}deg)`;
 
 	let progression = setInterval(()=>{
-		time+=.1;
+		time+=.4;
 		if (time > 100){
 			clearInterval(progression);
 			setEnd(false);
