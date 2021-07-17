@@ -195,7 +195,7 @@ function startPicking() {
 				renderProgress(time);
 			}
 		}, 1);
-            }, 100);
+            }, 250);
 
 		promptInp.addEventListener('input', (e) => {
 			e.preventDefault();
