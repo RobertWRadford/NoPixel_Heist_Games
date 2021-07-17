@@ -118,7 +118,7 @@ input[type=submit]:hover {
 }
 
 .middleText.end {
-    font-size: max(1.8vw, 20px);
+    font-size: max(1.8vw, 18px);
 }
 
 #timerSection {

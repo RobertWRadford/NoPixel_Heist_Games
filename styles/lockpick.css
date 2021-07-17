@@ -1,0 +1,184 @@
+#pickBlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid max(.1vw, 1px) black;
+    border-radius: 5px;
+    background-color: rgb(34,40,50);
+    width: max(25vw, 300px);
+    height: max(25vw, 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input[type=submit] {
+    font-family: 'Bauhaus 93';
+    background-color: grey;
+    color: white;
+    font-size: max(1.8vw, 18px);
+    -webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;
+    width: max(12vw, 120px);
+    padding: max(.25vw, 2.5px);
+    padding-top:max(.25vw, 2.5px);
+    padding-bottom:max(.5vw,5px);
+    border: solid max(.1vw,1px) black;
+    border-radius: 10px;
+    margin: max(1vw, 10px) 0;
+}
+
+button:hover {
+    color: darkgrey;
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: darkgrey;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pickBox {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.loader-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: max(18px, 1.8vw) solid rgba(205, 205, 205, .1);
+    box-sizing: border-box;
+}
+
+.spinner-holder-one, .answer-holder-one {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.spinner-holder-one {
+    z-index: 5;
+}
+
+.answer-holder-one {
+    z-index: 3;
+}
+
+.spinner-holder-two, .answer-holder-two {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.spinner-holder-two {
+    z-index: 5;
+}
+
+.answer-holder-two {
+    z-index: 3;
+}
+
+.loader-spinner, .answer-spinner {
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.loader-spinner {
+    border: max(18px, 1.8vw) solid rgba(255, 255, 255, .9);
+}
+
+.answer-spinner {
+    border: max(18px, 1.8vw) solid rgba(60,179,113, 1);
+}
+
+.animate-0-25-a, .animate-0-25-c {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.animate-0-25-b, .animate-0-25-d {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.animate-25-50-a, .animate-25-50-c {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.animate-25-50-b, .animate-25-50-d {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.animate-50-75-a, .animate-50-75-c {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.animate-50-75-b, .animate-50-75-d {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+.animate-75-100-a, .animate-75-100-c {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.animate-75-100-b, .animate-75-100-d {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+}
+
+.text {
+    text-align: center;
+    font-size: max(4.5vw, 45px);
+    color: rgba(255, 255, 255, 1);
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
