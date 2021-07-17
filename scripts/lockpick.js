@@ -211,7 +211,7 @@ function startPicking() {
 				succeses+=1;
                                 if (successes==5){
                                     setEnd(true);
-                                else {
+                                } else {
                                     pickLock();
                                 }
 			}
