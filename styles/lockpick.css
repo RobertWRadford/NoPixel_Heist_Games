@@ -6,8 +6,8 @@
     border: solid max(.1vw, 1px) black;
     border-radius: 5px;
     background-color: rgb(34,40,50);
-    width: max(25vw, 250px);
-    height: max(25vw, 250px);
+    width: max(25vw, 300px);
+    height: max(25vw, 300px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +47,12 @@ input[type=submit]:hover {
     color: darkgrey;
     background-color: white;
     cursor: pointer;
+}
+
+.middleText {
+    font-size: max(2.4vw, 24px);
+    width: 80%;
+    text-align: center;
 }
 
 .middleText.fail {

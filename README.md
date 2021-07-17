@@ -8,9 +8,7 @@ Before you press start on any puzzle you can change the puzzle completion timer 
 
 ### Lockpick
 
-!!! This specific minigame hasn't been adjusted to be playable on mobile yet. The keyboard won't move up to let you press a key !!!
-
-When you press start you will immediately see a circle with a number in the center appear. The circle will have a progressing bar and a green wedge somewhere on the perimeter. To succesfully pick the lock you need to hit the indicated number when the progression bar is inside of the green wedge. If you miss the timing or you press the wrong key you will fail the lockpick.
+When you press start you will see 'Get Ready!' and then after 1 second you will see a circle with a number in the center appear. The circle will have a progressing bar and a green wedge somewhere on the perimeter. To succesfully pick the lock you need to hit the indicated number when the progression bar is inside of the green wedge. If you miss the timing or you press the wrong key you will fail the lockpick.
 
 My remake of this minigame has a big flaw that the wedges can only start at 90 degree intervals around the circle due to the way progression arcs are typically built using 4 invisible turning squares. I don't personally know another way to do this and couldn't find a solution online so if you have a suggestion for that let me know please!
 
