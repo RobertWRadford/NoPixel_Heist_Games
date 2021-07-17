@@ -18,6 +18,7 @@ function startPicking() {
 	function pickLock(){
 
 		container.innerHTML = '';
+		promptInp.value = '';
         pickKey = Math.ceil(Math.random()*4);
 		let pickBox = document.createElement('div');
 		pickBox.className = 'pickBox';
@@ -175,7 +176,7 @@ function startPicking() {
 					renderProgress(time);
 				}
 			}, 1);
-        }, 200);
+        }, 250);
         
         function checkAnswer(e){
 	        e.preventDefault();
