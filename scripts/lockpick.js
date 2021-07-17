@@ -214,7 +214,8 @@ function startPicking() {
                                     setEnd(true);
                                 } else {
                                     time=0;
-                                    pickLock();
+                                    promptInp.value = '';
+                                    setTimeout(pickLock, 250);
                                 }
 			}
 		});
