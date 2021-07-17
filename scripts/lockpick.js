@@ -163,7 +163,37 @@ function startPicking() {
 		        document.getElementsByClassName('animate-75-100-b')[0].style.transform = `rotate(${angle}deg)`;
 		    }
 		}
-
+            var progression;
+            setTimeout(()=>{
+		progression = setInterval(()=>{
+			time+=.3;
+			if (time > 100){
+				clearInterval(progression);
+				setEnd(false);
+			} else {
+				renderProgress(time);
+			}
+		}, 1);
+            }, 250);
+            function checkAnswer(e){
+	        e.preventDefault();
+		clearInterval(progression);
+		let inp = promptInp.value;
+		if (inp.slice(-1) != `${pickKey}`){
+		    setEnd(false);
+		} else if (time < ansStart || time > ansEnd) {
+			setEnd(false);
+		} else {
+		    successes+=1;
+                    if (successes==5) {
+                        setEnd(true);
+                    } else {
+                        time=0;
+                        promptInp.removeEventListener('input', checkAnswer);
+                        setTimeout(pickLock, 100);
+                    }
+                }
+	    }
 	    if (ansArc>=25 && ansArc<50){
 	    	ansStart = 25;
 	        var angle = -90 + ((ansArc-25)/100)*360;
@@ -187,39 +217,8 @@ function startPicking() {
 	    ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
 
 	    spun.style.transform = `rotate(${angle}deg)`;
-            var progression;
-            setTimeout(()=>{
-		progression = setInterval(()=>{
-			time+=.3;
-			if (time > 100){
-				clearInterval(progression);
-				setEnd(false);
-			} else {
-				renderProgress(time);
-			}
-		}, 1);
-            }, 250);
 
-		promptInp.addEventListener('input', (e) => {
-			e.preventDefault();
-			clearInterval(progression);
-			let inp = promptInp.value;
-			if (inp.slice(-1) != `${pickKey}`){
-				setEnd(false);
-			} else if (time < ansStart || time > ansEnd) {
-				setEnd(false);
-			} else {
-				successes+=1;
-                                if (successes==5) {
-                                    setEnd(true);
-                                } else {
-                                    time=0;
-                                    promptInp.value = '';
-                                    setTimeout(pickLock, 250);
-                                }
-			}
-		});
-
+		promptInp.addEventListener('input', checkAnswer);
 		promptInp.focus();
 	}
 
