@@ -2,6 +2,7 @@ let container = document.getElementById('pickBlock');
 let starter = document.getElementsByClassName('startButton')[0];
 let promptInp = document.getElementsByClassName('prompt')[0];
 let time = 0;
+let successes = 0;
 let pickKey = Math.ceil(Math.random()*4)
 let ansStart;
 let ansEnd;
@@ -116,6 +117,7 @@ function startPicking() {
 
 		function setEnd(result){
 			container.innerHTML = '';
+                        promptInp.remove();
 			let failureMessage = document.createElement('p');
 			failureMessage.className = 'middleText fail';
 			failureMessage.innerText = result ? 'SUCCESFULLY UNLOCKED' : 'BROKE YOUR LOCKPICK';
@@ -187,7 +189,7 @@ function startPicking() {
             var progression;
             setTimeout(()=>{
 		progression = setInterval(()=>{
-			time+=.35;
+			time+=.3;
 			if (time > 100){
 				clearInterval(progression);
 				setEnd(false);
@@ -201,13 +203,17 @@ function startPicking() {
 			e.preventDefault();
 			clearInterval(progression);
 			let inp = promptInp.value;
-			promptInp.remove();
 			if (inp.slice(-1) != `${pickKey}`){
 				setEnd(false);
 			} else if (time < ansStart || time > ansEnd) {
 				setEnd(false);
 			} else {
-				setEnd(true);
+				succeses+=1;
+                                if (successes==5){
+                                    setEnd(true);
+                                else {
+                                    pickLock();
+                                }
 			}
 		});
 
