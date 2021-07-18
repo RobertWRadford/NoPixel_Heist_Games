@@ -86,6 +86,7 @@ input[type=submit]:hover {
 
 .spinner-holder-one, .answer-holder-one {
     position: absolute;
+    display: block;
     top:0;
     left:0;
     overflow: hidden;
@@ -106,6 +107,7 @@ input[type=submit]:hover {
 
 .spinner-holder-two, .answer-holder-two {
     position: absolute;
+    display: block;
     top:0;
     left:0;
     overflow: hidden;
@@ -129,6 +131,7 @@ input[type=submit]:hover {
     height: 200%;
     border-radius: 50%;
     box-sizing: border-box;
+    display: block;
 }
 
 .loader-spinner {
