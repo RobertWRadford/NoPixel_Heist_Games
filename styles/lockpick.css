@@ -93,6 +93,7 @@ input[type=submit]:hover {
     height: 50%;
     background: transparent;
     box-sizing: border-box;
+    border: 0;
 }
 
 .spinner-holder-one {
