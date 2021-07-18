@@ -16,6 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15vh;
 }
 
 #pickBlock {
@@ -54,10 +55,11 @@ button, input[type=submit] {
     font-family: 'Bauhaus 93';
     background-color: grey;
     color: white;
-    font-size: max(1.8vw, 18px);
-    -webkit-text-stroke-width: max(.08vw,.8px);
+    font-size: max(2.1vw, 21px);
+    font-weight: 700;
+    -webkit-text-stroke-width: max(.10vw,1.0px);
     -webkit-text-stroke-color: black;
-    width: max(12vw, 120px);
+    width: max(15vw, 150px);
     padding: max(.25vw, 2.5px);
     padding-top:max(.25vw, 2.5px);
     padding-bottom:max(.5vw,5px);
