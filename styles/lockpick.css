@@ -89,8 +89,8 @@ input[type=submit]:hover {
 }
 
 .middleText.fail {
-    font-size: max(1.6vw, 16px);
-    -webkit-text-stroke-width: max(.067vw,.67px);
+    font-size: max(2.1vw, 21px);
+    -webkit-text-stroke-width: max(.08vw,.8px);
     -webkit-text-stroke-color: black;
 }
 
