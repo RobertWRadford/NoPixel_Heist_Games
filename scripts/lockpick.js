@@ -1,11 +1,28 @@
 let container = document.getElementById('pickBlock');
 let starter = document.getElementsByClassName('startButton')[0];
-let promptInp = document.getElementsByClassName('prompt')[0];
 let time = 0;
 let successes = 0;
 let pickKey;
 let ansStart;
 let ansEnd;
+var inputForm;
+
+if (window.innerWidth < 720) {
+	var inputContainer = document.createElement('div');
+	inputContainer.className = 'inputContainer';
+	document.getElementsByClassName('gameFrame')[0].append(inputContainer);
+	inputForm = document.createElement('form');
+	inputForm.className = 'inputForm';
+	inputContainer.append(inputForm);
+	for (i=1; i<5; i++){
+		var inputButton = document.createElement('input');
+		inputButton.className = 'inputButton';
+		inputButton.setAttribute('type', 'submit');
+		inputButton.value = `${i}`;
+		inputButton.name = `${i}`;
+		inputForm.append(inputButton);
+	}
+}
 
 function startPicking() {
 
@@ -18,7 +35,6 @@ function startPicking() {
 	function pickLock(){
 
 		container.innerHTML = '';
-		promptInp.value = '';
         pickKey = Math.ceil(Math.random()*4);
 		let pickBox = document.createElement('div');
 		pickBox.className = 'pickBox';
@@ -119,7 +135,6 @@ function startPicking() {
 
 		function setEnd(result){
 			container.innerHTML = '';
-            promptInp.remove();
 			let failureMessage = document.createElement('p');
 			failureMessage.className = 'middleText fail';
 			failureMessage.innerText = result ? 'SUCCESFULLY UNLOCKED' : 'BROKE YOUR LOCKPICK';
@@ -181,10 +196,14 @@ function startPicking() {
         function checkAnswer(e){
 	        e.preventDefault();
 			clearInterval(progression);
-			let inp = promptInp.value;
-			console.log(inp.slice(-1), pickKey);
+			if (e.key) {
+				var inp = e.key;
+			} else {
+				var inp = document.activeElement.name;
+			}
+			console.log(inp, pickKey);
 			console.log(time, ansStart, ansEnd);
-			if (inp.slice(-1) != `${pickKey}`){
+			if (inp != `${pickKey}`){
 		    	setEnd(false);
 			} else if (time < ansStart || time > ansEnd) {
 				setEnd(false);
@@ -194,7 +213,10 @@ function startPicking() {
                     setEnd(true);
                 } else {
                     time=0;
-                    promptInp.removeEventListener('input', checkAnswer);
+                    document.removeEventListener('keydown', checkAnswer);
+                    if (inputForm) {
+                    	inputForm.removeEventListener('submit', checkAnswer);
+                    }
                     setTimeout(pickLock, 100);
                 }
             }
@@ -224,8 +246,12 @@ function startPicking() {
 
 	    spun.style.transform = `rotate(${angle}deg)`;
 
-		promptInp.addEventListener('input', checkAnswer);
-		promptInp.focus();
+		document.addEventListener('keydown', checkAnswer);
+
+		if (inputForm) {
+			inputForm.addEventListener('submit', checkAnswer);
+		}
+
 	}
 
 	setTimeout(pickLock, 1000);	
@@ -233,6 +259,5 @@ function startPicking() {
 
 starter.addEventListener('click', (e) => {
 	e.preventDefault();
-	promptInp.focus();
 	startPicking();
 });
