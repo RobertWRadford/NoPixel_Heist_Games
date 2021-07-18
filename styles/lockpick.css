@@ -90,6 +90,8 @@ input[type=submit]:hover {
 
 .middleText.fail {
     font-size: max(1.6vw, 16px);
+    -webkit-text-stroke-width: max(.067vw,.67px);
+    -webkit-text-stroke-color: black;
 }
 
 .pickBox {
