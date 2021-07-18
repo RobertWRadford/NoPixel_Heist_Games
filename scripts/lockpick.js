@@ -46,6 +46,10 @@ function startPicking() {
 		loaderBG.className = 'loader-bg';
 		loader.append(loaderBG);
 
+		// let topBG = document.createElement('div');
+		// topBG.className = 'top-bg';
+		// loader.append(topBG);
+
 		let loaderText = document.createElement('div');
 		loaderText.className = 'text';
 		loaderBG.append(loaderText);
@@ -184,12 +188,12 @@ function startPicking() {
         setTimeout(()=>{
 			progression = setInterval(()=>{
 				time+=.35;
-				if (time > 100){
-					clearInterval(progression);
-					setEnd(false);
-				} else {
-					renderProgress(time);
-				}
+				// if (time > 100){
+				// 	clearInterval(progression);
+				// 	setEnd(false);
+				// } else {
+				// 	renderProgress(time);
+				// }
 			}, 1);
         }, 350);
         
