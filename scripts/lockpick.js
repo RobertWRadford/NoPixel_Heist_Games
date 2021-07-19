@@ -242,8 +242,8 @@ function startPicking() {
 
             let invert = false;
 
-	    if (angle <= -45 || angle >= -15) {
-	    	angle = Math.floor(Math.random()*30)+15;
+	    if (angle <= -55 || angle >= -20) {
+	    	angle = Math.floor(Math.random()*35)+20;
                 invert = true;
 	    }
 	    if (Math.ceil(Math.random()*10) > 5) {
@@ -257,8 +257,8 @@ function startPicking() {
             } else {
                 ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
             }
-            ansStart-=5;
-            amsEnd+=5;
+            ansStart-=2;
+            amsEnd+=2;
 
 	    spun.style.transform = `rotate(${angle}deg)`;
 
