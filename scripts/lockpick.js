@@ -180,8 +180,8 @@ function startPicking() {
 		    }
 		}
 
-		pacing = (Math.floor(Math.random()*25)+5)/100;
-        pacing += ansArc < 50 ? ansArc < 75 ? .1 : .15 : .2;
+		pacing = (Math.floor(Math.random()*20)+15)/100;
+        pacing += ansArc < 50 ? ansArc < 75 ? 0 : .05 : .1;
         var progression;
         setTimeout(()=>{
 			progression = setInterval(()=>{
