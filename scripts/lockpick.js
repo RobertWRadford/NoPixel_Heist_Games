@@ -242,8 +242,8 @@ function startPicking() {
 
             let invert = false;
 
-	    if (angle <= -55 || angle >= -20) {
-	    	angle = Math.floor(Math.random()*35)+20;
+	    if (angle <= -45 || angle >= -15) {
+	    	angle = Math.floor(Math.random()*30)+15;
                 invert = true;
 	    }
 	    if (Math.ceil(Math.random()*10) > 5) {
