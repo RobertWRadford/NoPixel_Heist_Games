@@ -240,14 +240,23 @@ function startPicking() {
 	        var spun = document.getElementsByClassName('animate-75-100-d')[0];
 	    }
 
+            let invert = false;
+
 	    if (angle <= -65 || angle >= -25) {
 	    	angle = Math.floor(Math.random()*40)+25;
+                invert = true;
 	    }
 	    if (Math.ceil(Math.random()*10) > 5) {
 	    	angle*=-1
+                invert = true;
 	    }
 
-	    ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
+            if (invert) {
+                ansEnd = ansStart+25;
+                ansStart = ansEnd-(((100*(-1*angle+90))+ansStart)/360);
+            } else {
+                ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
+            }
 
 	    spun.style.transform = `rotate(${angle}deg)`;
 
