@@ -259,8 +259,8 @@ function startPicking() {
             ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
         }
 
-        ansStart-=2;
-        ansEnd+=2;
+        ansStart-=1;
+        ansEnd+=1;
 
         spun.style.transform = `rotate(${angle}deg)`;
 
