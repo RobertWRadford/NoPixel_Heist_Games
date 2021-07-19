@@ -179,11 +179,13 @@ function startPicking() {
 		        document.getElementsByClassName('animate-75-100-b')[0].style.transform = `rotate(${angle}deg)`;
 		    }
 		}
-        
+
+		pacing = (Math.floor(Math.random()*25)+5)/100;
+        pacing += ansArc < 50 ? ansArc < 75 ? .1 : .15 : .2;
         var progression;
         setTimeout(()=>{
 			progression = setInterval(()=>{
-				time+=.3;
+				time+=pacing;
 				if (time > 100){
 					clearInterval(progression);
 					setEnd(false);
@@ -238,8 +240,11 @@ function startPicking() {
 	        var spun = document.getElementsByClassName('animate-75-100-d')[0];
 	    }
 
-	    if (angle <= -70 || angle >= -25) {
-	    	angle = -55;
+	    if (angle <= -65 || angle >= -25) {
+	    	angle = Math.floor(Math.random()*40)+25;
+	    }
+	    if (Math.ceil(Math.random()*10) > 5) {
+	    	angle*=-1
 	    }
 
 	    ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
