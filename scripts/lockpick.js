@@ -183,7 +183,7 @@ function startPicking() {
         var progression;
         setTimeout(()=>{
 			progression = setInterval(()=>{
-				time+=.35;
+				time+=.15;
 				if (time > 100){
 					clearInterval(progression);
 					setEnd(false);
@@ -199,10 +199,8 @@ function startPicking() {
 			if (e.key) {
 				var inp = e.key;
 			} else {
-				var inp = document.activeElement.name;
+				var inp = e.target.name;
 			}
-			console.log(inp, pickKey);
-			console.log(time, ansStart, ansEnd);
 			if (inp != `${pickKey}`){
 		    	setEnd(false);
 			} else if (time < ansStart || time > ansEnd) {
@@ -215,7 +213,9 @@ function startPicking() {
                     time=0;
                     document.removeEventListener('keydown', checkAnswer);
                     if (inputForm) {
-                    	inputForm.removeEventListener('submit', checkAnswer);
+                    	for (i=1; i<5; i++){
+                    		document.getElementsByName(`${i}`)[0].removeEventListener('click', checkAnswer);
+                    	}
                     }
                     setTimeout(pickLock, 100);
                 }
@@ -249,7 +249,9 @@ function startPicking() {
 		document.addEventListener('keydown', checkAnswer);
 
 		if (inputForm) {
-			inputForm.addEventListener('submit', checkAnswer);
+			for (i=1; i<5; i++){
+				document.getElementsByName(`${i}`)[0].addEventListener('click', checkAnswer);
+			}
 		}
 
 	}
