@@ -183,7 +183,7 @@ function startPicking() {
         var progression;
         setTimeout(()=>{
 			progression = setInterval(()=>{
-				time+=.15;
+				time+=.3;
 				if (time > 100){
 					clearInterval(progression);
 					setEnd(false);
