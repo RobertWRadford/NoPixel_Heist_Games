@@ -48,6 +48,7 @@ body {
 input[type=submit].inputButton {
     height: max(5vw, 60px);
     width: max(5vw, 60px);
+    margin: 3% 0;
 }
 
 button, input[type=submit] {
