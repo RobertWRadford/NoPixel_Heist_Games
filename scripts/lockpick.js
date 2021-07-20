@@ -199,6 +199,12 @@ function startPicking() {
         function checkAnswer(e){
             e.preventDefault();
             clearInterval(progression);
+            document.removeEventListener('keydown', checkAnswer);
+            if (inputForm) {
+                for (i=1; i<5; i++){
+                    document.getElementsByName(`${i}`)[0].removeEventListener('click', checkAnswer);
+                }
+            }
             if (e.key) {
                 var inp = e.key;
             } else {
@@ -214,12 +220,6 @@ function startPicking() {
                     setEnd(true);
                 } else {
                     time=0;
-                    document.removeEventListener('keydown', checkAnswer);
-                    if (inputForm) {
-                        for (i=1; i<5; i++){
-                            document.getElementsByName(`${i}`)[0].removeEventListener('click', checkAnswer);
-                        }
-                    }
                     setTimeout(pickLock, 100);
                 }
             }
