@@ -52,86 +52,86 @@ function startPicking() {
         loaderText.innerText = `${pickKey}`;
 
         let spinnerHolderOneOne = document.createElement('div');
-        spinnerHolderOneOne.className = 'spinner-holder-one animate-0-25-a';
+        spinnerHolderOneOne.className = 'spinner-holder-one animate-0-90-a';
         loader.append(spinnerHolderOneOne);
         let spinnerHolderTwoOne = document.createElement('div');
-        spinnerHolderTwoOne.className = 'spinner-holder-two animate-0-25-b';
+        spinnerHolderTwoOne.className = 'spinner-holder-two animate-0-90-b';
         spinnerHolderOneOne.append(spinnerHolderTwoOne);
         let loaderSpinnerOne = document.createElement('div');
         loaderSpinnerOne.className = 'loader-spinner';
         spinnerHolderTwoOne.append(loaderSpinnerOne);
 
         let answerHolderOneOne = document.createElement('div');
-        answerHolderOneOne.className = 'answer-holder-one animate-0-25-c';
+        answerHolderOneOne.className = 'answer-holder-one animate-0-90-c';
         loader.append(answerHolderOneOne);
         let answerHolderTwoOne = document.createElement('div');
-        answerHolderTwoOne.className = 'answer-holder-two animate-0-25-d';
+        answerHolderTwoOne.className = 'answer-holder-two animate-0-90-d';
         answerHolderOneOne.append(answerHolderTwoOne);
         let answerSpinnerOne = document.createElement('div');
         answerSpinnerOne.className = 'answer-spinner';
         answerHolderTwoOne.append(answerSpinnerOne);
 
         let spinnerHolderOneTwo = document.createElement('div');
-        spinnerHolderOneTwo.className = 'spinner-holder-one animate-25-50-a';
+        spinnerHolderOneTwo.className = 'spinner-holder-one animate-90-180-a';
         loader.append(spinnerHolderOneTwo);
         let spinnerHolderTwoTwo = document.createElement('div');
-        spinnerHolderTwoTwo.className = 'spinner-holder-two animate-25-50-b';
+        spinnerHolderTwoTwo.className = 'spinner-holder-two animate-90-180-b';
         spinnerHolderOneTwo.append(spinnerHolderTwoTwo);
         let loaderSpinnerTwo = document.createElement('div');
         loaderSpinnerTwo.className = 'loader-spinner';
         spinnerHolderTwoTwo.append(loaderSpinnerTwo);
 
         let answerHolderOneTwo = document.createElement('div');
-        answerHolderOneTwo.className = 'answer-holder-one animate-25-50-c';
+        answerHolderOneTwo.className = 'answer-holder-one animate-90-180-c';
         loader.append(answerHolderOneTwo);
         let answerHolderTwoTwo = document.createElement('div');
-        answerHolderTwoTwo.className = 'answer-holder-two animate-25-50-d';
+        answerHolderTwoTwo.className = 'answer-holder-two animate-90-180-d';
         answerHolderOneTwo.append(answerHolderTwoTwo);
         let answerSpinnerTwo = document.createElement('div');
         answerSpinnerTwo.className = 'answer-spinner';
         answerHolderTwoTwo.append(answerSpinnerTwo);
 
         let spinnerHolderOneThree = document.createElement('div');
-        spinnerHolderOneThree.className = 'spinner-holder-one animate-50-75-a';
+        spinnerHolderOneThree.className = 'spinner-holder-one animate-180-270-a';
         loader.append(spinnerHolderOneThree);
         let spinnerHolderTwoThree = document.createElement('div');
-        spinnerHolderTwoThree.className = 'spinner-holder-two animate-50-75-b';
+        spinnerHolderTwoThree.className = 'spinner-holder-two animate-180-270-b';
         spinnerHolderOneThree.append(spinnerHolderTwoThree);
         let loaderSpinnerThree = document.createElement('div');
         loaderSpinnerThree.className = 'loader-spinner';
         spinnerHolderTwoThree.append(loaderSpinnerThree);
 
         let answerHolderOneThree = document.createElement('div');
-        answerHolderOneThree.className = 'answer-holder-one animate-50-75-c';
+        answerHolderOneThree.className = 'answer-holder-one animate-180-270-c';
         loader.append(answerHolderOneThree);
         let answerHolderTwoThree = document.createElement('div');
-        answerHolderTwoThree.className = 'answer-holder-two animate-50-75-d';
+        answerHolderTwoThree.className = 'answer-holder-two animate-180-270-d';
         answerHolderOneThree.append(answerHolderTwoThree);
         let answerSpinnerThree = document.createElement('div');
         answerSpinnerThree.className = 'answer-spinner';
         answerHolderTwoThree.append(answerSpinnerThree);
 
         let spinnerHolderOneFour = document.createElement('div');
-        spinnerHolderOneFour.className = 'spinner-holder-one animate-75-100-a';
+        spinnerHolderOneFour.className = 'spinner-holder-one animate-270-360-a';
         loader.append(spinnerHolderOneFour);
         let spinnerHolderTwoFour = document.createElement('div');
-        spinnerHolderTwoFour.className = 'spinner-holder-two animate-75-100-b';
+        spinnerHolderTwoFour.className = 'spinner-holder-two animate-270-360-b';
         spinnerHolderOneFour.append(spinnerHolderTwoFour);
         let loaderSpinnerFour = document.createElement('div');
         loaderSpinnerFour.className = 'loader-spinner';
         spinnerHolderTwoFour.append(loaderSpinnerFour);
 
         let answerHolderOneFour = document.createElement('div');
-        answerHolderOneFour.className = 'answer-holder-one animate-75-100-c';
+        answerHolderOneFour.className = 'answer-holder-one animate-270-360-c';
         loader.append(answerHolderOneFour);
         let answerHolderTwoFour = document.createElement('div');
-        answerHolderTwoFour.className = 'answer-holder-two animate-75-100-d';
+        answerHolderTwoFour.className = 'answer-holder-two animate-270-360-d';
         answerHolderOneFour.append(answerHolderTwoFour);
         let answerSpinnerFour = document.createElement('div');
         answerSpinnerFour.className = 'answer-spinner';
         answerHolderTwoFour.append(answerSpinnerFour);
 
-        let ansArc = Math.floor(Math.random()*75)+25;
+        let ansArc = Math.floor(Math.random()*270)+90;
 
         function setEnd(result){
             container.innerHTML = '';
@@ -159,35 +159,35 @@ function startPicking() {
 
         function renderProgress(progress) {
             progress = Math.floor(progress);
-            if (progress<25) {
-                var angle = -90 + (progress/100)*360;
-                document.getElementsByClassName('animate-0-25-b')[0].style.transform = `rotate(${angle}deg)`;
+            if (progress<90) {
+                var angle = -90 + progress;
+                document.getElementsByClassName('animate-0-90-b')[0].style.transform = `rotate(${angle}deg)`;
             }
-            else if (progress>=25 && progress<50) {
-                var angle = -90 + ((progress-25)/100)*360;
-                document.getElementsByClassName('animate-0-25-b')[0].style.transform = `rotate(0deg)`;
-                document.getElementsByClassName('animate-25-50-b')[0].style.transform = `rotate(${angle}deg)`;
+            else if (progress>=90 && progress<180) {
+                var angle = -180 + progress;
+                document.getElementsByClassName('animate-0-90-b')[0].style.transform = `rotate(0deg)`;
+                document.getElementsByClassName('animate-90-180-b')[0].style.transform = `rotate(${angle}deg)`;
             }
-            else if (progress>=50 && progress<75) {
-                var angle = -90 + ((progress-50)/100)*360;
-                document.getElementsByClassName('animate-25-50-b')[0].style.transform = `rotate(0deg)`;
-                document.getElementsByClassName('animate-50-75-b')[0].style.transform = `rotate(${angle}deg)`;
+            else if (progress>=180 && progress<270) {
+                var angle = -270 + progress;
+                document.getElementsByClassName('animate-90-180-b')[0].style.transform = `rotate(0deg)`;
+                document.getElementsByClassName('animate-180-270-b')[0].style.transform = `rotate(${angle}deg)`;
             }
-            else if (progress>=75 && progress<=100) {
-                var angle = -90 + ((progress-75)/100)*360;
-                document.getElementsByClassName('animate-50-75-b')[0].style.transform = `rotate(0deg)`;
-                document.getElementsByClassName('animate-75-100-b')[0].style.transform = `rotate(${angle}deg)`;
+            else if (progress>=270 && progress<=360) {
+                var angle = -360 + progress;
+                document.getElementsByClassName('animate-180-270-b')[0].style.transform = `rotate(0deg)`;
+                document.getElementsByClassName('animate-270-360-b')[0].style.transform = `rotate(${angle}deg)`;
             }
         }
 
-        let range = ansArc < 50 ? ansArc < 75 ? 20 : 35 : 50;
-        pacing = (Math.floor(Math.random()*range)+15)/100;
+        let range = ansArc < 180 ? ansArc < 270 ? 30 : 45 : 60;
+        pacing = (Math.floor(Math.random()*range)+70)/100;
 
         var progression;
         setTimeout(()=>{
             progression = setInterval(()=>{
                 time+=pacing;
-                if (time > 100){
+                if (time > 360){
                     clearInterval(progression);
                     setEnd(false);
                 } else {
@@ -199,6 +199,7 @@ function startPicking() {
         function checkAnswer(e){
             e.preventDefault();
             clearInterval(progression);
+            console.log(`${(time-ansStart).toFixed(1)} : ${(ansEnd-time).toFixed(1)}`);
             if (e.key) {
                 var inp = e.key;
             } else {
@@ -225,42 +226,42 @@ function startPicking() {
             }
         }
 
-        if (ansArc>=25 && ansArc<50){
-            ansStart = 25;
-            var angle = -90 + ((ansArc-25)/100)*360;
-            var spun = document.getElementsByClassName('animate-25-50-d')[0];
+        if (ansArc>=90 && ansArc<180){
+            ansStart = 90;
+            var angle = -180 + ansArc;
+            var spun = document.getElementsByClassName('animate-90-180-d')[0];
         }
-        else if (ansArc>=50 && ansArc<75){
-            ansStart = 50;
-            var angle = -90 + ((ansArc-50)/100)*360;
-            var spun = document.getElementsByClassName('animate-50-75-d')[0];
+        else if (ansArc>=180 && ansArc<270){
+            ansStart = 180;
+            var angle = -270 + ansArc;
+            var spun = document.getElementsByClassName('animate-180-270-d')[0];
         }
-        else if (ansArc>=75 && ansArc<=100){
-            ansStart = 75;
-            var angle = -90 + ((ansArc-75)/100)*360;
-            var spun = document.getElementsByClassName('animate-75-100-d')[0];
+        else if (ansArc>=270 && ansArc<=360){
+            ansStart = 270;
+            var angle = -360 + ansArc;
+            var spun = document.getElementsByClassName('animate-270-360-d')[0];
         }
 
-            let invert = false;
+        let invert = -1;
 
-        if (angle <= -70 || angle >= -40) {
-            angle = Math.floor(Math.random()*30)+40;
-                invert = true;
+        if (angle <= -70 || angle >= -45) {
+            angle = Math.floor(Math.random()*25)+45;
+            invert *= -1;
         }
         if (Math.ceil(Math.random()*10) > 5) {
             angle*=-1
-                invert = true;
+            invert *= -1;
         }
 
-        if (invert) {
-            ansEnd = ansStart+25;
-            ansStart = ansEnd-(((100*(-1*angle+90))+ansStart)/360);
+        if (invert > 0) {
+            ansEnd = ansStart+90;
+            ansStart = ansEnd-(90-angle);
         } else {
-            ansEnd = ansStart+(((100*(angle+90))+ansStart)/360);
+            ansEnd = ansStart+(90+angle);
         }
 
-        ansStart-=2;
-        ansEnd+=2;
+        ansStart-=2.5;
+        ansEnd+=2.5;
 
         spun.style.transform = `rotate(${angle}deg)`;
 
@@ -271,7 +272,6 @@ function startPicking() {
                 document.getElementsByName(`${i}`)[0].addEventListener('click', checkAnswer);
             }
         }
-
     }
 
     setTimeout(pickLock, 1000); 

@@ -181,55 +181,55 @@ input[type=submit]:hover {
     z-index: 3;
 }
 
-.animate-0-25-a, .animate-0-25-c {
+.animate-0-90-a, .animate-0-90-c {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
 
-.animate-0-25-b, .animate-0-25-d {
+.animate-0-90-b, .animate-0-90-d {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
 
-.animate-25-50-a, .animate-25-50-c {
+.animate-90-180-a, .animate-90-180-c {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
 
-.animate-25-50-b, .animate-25-50-d {
+.animate-90-180-b, .animate-90-180-d {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
 
-.animate-50-75-a, .animate-50-75-c {
+.animate-180-270-a, .animate-180-270-c {
     transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
 
-.animate-50-75-b, .animate-50-75-d {
+.animate-180-270-b, .animate-180-270-d {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
-.animate-75-100-a, .animate-75-100-c {
+.animate-270-360-a, .animate-270-360-c {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform-origin: 100% 100%;
     -webkit-transform-origin: 100% 100%;
 }
 
-.animate-75-100-b, .animate-75-100-d {
+.animate-270-360-b, .animate-270-360-d {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     transform-origin: 100% 100%;
