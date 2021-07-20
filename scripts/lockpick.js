@@ -197,14 +197,24 @@ function startPicking() {
         }, 350);
         
         function checkAnswer(e){
+            
             e.preventDefault();
             clearInterval(progression);
             console.log(`${(time-ansStart).toFixed(1)} : ${(ansEnd-time).toFixed(1)}`);
+            document.removeEventListener('keydown', checkAnswer);
+
+            if (inputForm) {
+                for (i=1; i<5; i++){
+                    document.getElementsByName(`${i}`)[0].removeEventListener('click', checkAnswer);
+                }
+            }
+
             if (e.key) {
                 var inp = e.key;
             } else {
                 var inp = e.target.name;
             }
+
             if (inp != `${pickKey}`){
                 setEnd(false);
             } else if (time < ansStart || time > ansEnd) {
@@ -215,15 +225,10 @@ function startPicking() {
                     setEnd(true);
                 } else {
                     time=0;
-                    document.removeEventListener('keydown', checkAnswer);
-                    if (inputForm) {
-                        for (i=1; i<5; i++){
-                            document.getElementsByName(`${i}`)[0].removeEventListener('click', checkAnswer);
-                        }
-                    }
                     setTimeout(pickLock, 100);
                 }
             }
+
         }
 
         if (ansArc>=90 && ansArc<180){
