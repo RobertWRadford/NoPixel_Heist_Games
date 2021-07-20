@@ -197,7 +197,7 @@ function startPicking() {
         }, 350);
         
         function checkAnswer(e){
-            
+
             e.preventDefault();
             clearInterval(progression);
             console.log(`${(time-ansStart).toFixed(1)} : ${(ansEnd-time).toFixed(1)}`);
@@ -265,8 +265,8 @@ function startPicking() {
             ansEnd = ansStart+(90+angle);
         }
 
-        ansStart-=2.5;
-        ansEnd+=2.5;
+        ansStart-=3;
+        ansEnd+=3;
 
         spun.style.transform = `rotate(${angle}deg)`;
 
