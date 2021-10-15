@@ -1,0 +1,119 @@
+#contentBlock {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: solid max(.1vw, 1px) black;
+	border-radius: 10px;
+	background-color: rgb(34,40,50);
+	width: max(30vw, 300px);
+	height: max(35vw, 350px);
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button, input[type=submit] {
+	font-family: 'Bauhaus 93';
+	background-color: grey;
+	color: white;
+	font-size: max(1.8vw, 18px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;
+	width: max(12vw, 120px);
+	padding: max(.25vw, 2.5px);
+	padding-top:max(.25vw, 2.5px);
+	padding-bottom:max(.5vw,5px);
+	border: solid max(.1vw,1px) black;
+	border-radius: 10px;
+	transform: translateX(-50%);
+	margin-left: 50%;
+	margin-top: 2%;
+}
+
+button:hover {
+	color: darkgrey;
+	background-color: white;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	color: darkgrey;
+	background-color: white;
+	cursor: pointer;
+}
+
+.middleText {
+	text-align: center;
+	margin-left: 50%;
+	min-width: 80%;
+	transform: translate(-50%);
+	font-size: max(3vw, 30px);
+	-webkit-text-stroke-width: max(.05vw,.5px);
+    -webkit-text-stroke-color: black;
+}
+
+.middleText.fail {
+	font-size: max(1.8vw, 20px);
+}
+
+.grid {
+	width: max(29vw, 290px);
+	height: max(29vw, 290px);
+	margin-left: max(.5vw, 5px);
+	border-collapse: seperate;
+	border-spacing: max(.1vw, 1px);
+}
+
+.block {
+	background-color: rgb(76,88,122);
+	font-size: max(2.25vw, 22.5px);
+	-webkit-text-stroke-width: max(.08vw,.8px);
+    -webkit-text-stroke-color: black;
+	text-align: center;
+}
+
+.block.\30-0 {
+	border-radius: 5px 0 0 0;
+}
+
+.block.\30-8 {
+	border-radius: 0 5px 0 0;
+}
+
+.block.\38-0 {
+	border-radius: 0 0 0 5px;
+}
+
+.block.\38-8 {
+	border-radius: 0 0 5px 0;
+}
+
+.block.\34-4 {
+	background-color: purple;
+}
+
+.block.\34-4.encumbered {
+	background:  radial-gradient(circle, red 15%, purple 65%);
+}
+
+.statusBox {
+	height: max(5vw, 50px);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detail {
+	width: 35%;
+	height:  max(2vw, 20px);
+	display: inline-block;
+	margin: 0;
+	margin-top: max(.5vw, 5px);
+	text-align: left;
+	font-size: max(1.2vw, 12px);
+	-webkit-text-stroke-width: max(.04vw,.4px);
+    -webkit-text-stroke-color: black;
+}
