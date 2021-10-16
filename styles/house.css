@@ -1,8 +1,8 @@
 #contentBlock {
 	position: absolute;
-	top: 55%;
+	top: 10%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -10%);
 	border: solid max(.1vw, 1px) black;
 	border-radius: 10px;
 	background-color: rgb(34,40,50);
@@ -116,4 +116,45 @@ input[type=submit]:hover {
 	font-size: max(1.2vw, 12px);
 	-webkit-text-stroke-width: max(.04vw,.4px);
     -webkit-text-stroke-color: black;
+}
+
+.dpad {
+	position: absolute;
+	top: max(440px, 44vw);
+	left: 50%;
+	transform: translate(-50%, -10%);
+	width: max(20vw, 200px);
+	height: max(20vw, 200px);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	place-items: center;
+}
+
+.dbutton {
+	width: 80%;
+	height: 80%;
+	font-size: max(3vw, 30px);
+	transform: translateX(0%);
+    margin-left: 0%;
+}
+
+.up.dbutton {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.right.dbutton {
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+.down.dbutton {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.left.dbutton {
+	grid-column: 1/2;
+	grid-row: 2/3;
 }

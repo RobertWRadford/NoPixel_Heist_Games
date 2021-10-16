@@ -15,7 +15,37 @@ let policeChance = 5;
 let smallObj = 0;
 let bigObj = 0;
 let dongle = false;
-const polTime = window.innerWidth < 720 ? 2250:750;
+let mobile = window.innerWidth < 720 ? true : false;
+let polTime = 750;
+
+let dpad;
+let upBtn;
+let downBtn;
+let rightBtn;
+let leftBtn;
+
+if (mobile) {
+	polTime = 1500;
+	dpad = document.createElement('div');
+	dpad.className = 'dpad';
+	document.getElementsByTagName('body')[0].append(dpad)
+	upBtn = document.createElement('button');
+	upBtn.className = 'up dbutton';
+	upBtn.innerText = '^';
+	dpad.append(upBtn);
+	rightBtn = document.createElement('button');
+	rightBtn.className = 'right dbutton';
+	rightBtn.innerText = '>';
+	dpad.append(rightBtn);
+	downBtn = document.createElement('button');
+	downBtn.className = 'down dbutton';
+	downBtn.innerText = 'v';
+	dpad.append(downBtn);
+	leftBtn = document.createElement('button');
+	leftBtn.className = 'left dbutton';
+	leftBtn.innerText = '<';
+	dpad.append(leftBtn);
+}
 
 let vinewood = [[[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],
 				[3,3,3,3,3,3,3,1,1,1,2,2,2,2,2,3,3],
@@ -322,11 +352,11 @@ function enterHome(){
 			let resolveForm = document.createElement('form');
 			container.append(resolveForm);
 			resolveForm.setAttribute('method', 'POST');
-			// let token = document.createElement('input');
-			// token.setAttribute('name', 'csrfmiddlewaretoken');
-			// token.setAttribute('type', 'hidden');
-			// token.setAttribute('value', csrf);
-			// resolveForm.append(token);
+			let token = document.createElement('input');
+			token.setAttribute('name', 'csrfmiddlewaretoken');
+			token.setAttribute('type', 'hidden');
+			token.setAttribute('value', csrf);
+			resolveForm.append(token);
 			let outcome = document.createElement('input');
 			outcome.setAttribute('type', 'hidden');
 			outcome.setAttribute('name', result);
@@ -408,6 +438,24 @@ function enterHome(){
 			e.preventDefault();
 			movePlayer(e.key);
 		});
+		if (mobile) {
+			upBtn.addEventListener('click', (e)=>{
+				e.preventDefault();
+				movePlayer('w');
+			});
+			downBtn.addEventListener('click', (e)=>{
+				e.preventDefault();
+				movePlayer('s');
+			});
+			rightBtn.addEventListener('click', (e)=>{
+				e.preventDefault();
+				movePlayer('d');
+			});
+			leftBtn.addEventListener('click', (e)=>{
+				e.preventDefault();
+				movePlayer('a');
+			});
+		}
 
 		let polUp = setInterval(()=>{
 			policeChance += 1;
