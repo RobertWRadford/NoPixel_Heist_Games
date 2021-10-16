@@ -1,8 +1,8 @@
 const SCREEN_WIDTH = window.innerWidth;
 const SCREEN_HEIGHT = window.innerHeight;
 
-const CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.5);
-const CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.5);
+const CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.7);
+const CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.6);
 
 const PADDLE_WIDTH = CANV_WIDTH/50;
 const PADDLE_HEIGHT = CANV_HEIGHT/9;
@@ -23,8 +23,8 @@ var player2 = false;
 var player_keypressed = '';
 var player2_keypressed = '';
 var ctx;
-var dx = CANV_WIDTH/210;
-let serveHeight = Math.ceil(Math.random()*200)+50;
+var dx = CANV_WIDTH/240;
+let serveHeight = Math.ceil(Math.random()*150)+25;
 serveHeight = Math.random()*100 >= 50 ? serveHeight : -serveHeight;
 var dy = CANV_HEIGHT/serveHeight;
 var player_bar=new Bar(0,canvas.height/2-PADDLE_HEIGHT/2);
@@ -175,6 +175,7 @@ function draw() {
   		unhit = true;
   		dx *= .5;
   	}
+    serveHeight = Math.ceil(Math.random()*150)+25;
     serveHeight = Math.random()*100 >= 50 ? serveHeight : -serveHeight;
     var dy = CANV_HEIGHT/serveHeight;
   	let color = side=='player' ? 'green' : 'red';
