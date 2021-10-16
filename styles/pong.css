@@ -6,7 +6,7 @@ body {
 	width: 75%;
 	height: 65vh;
 	margin: auto;
-	margin-top: 5vh;
+	margin-top: 1vh;
 	background: rgb(34,40,50);
 	display: flex;
     flex-direction: column;
