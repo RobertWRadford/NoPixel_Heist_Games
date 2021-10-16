@@ -1,42 +1,40 @@
-const SCREEN_WIDTH = window.innerWidth;
-const SCREEN_HEIGHT = window.innerHeight;
-
-const CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.7);
-const CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.6);
-
-const PADDLE_WIDTH = CANV_WIDTH/50;
-const PADDLE_HEIGHT = CANV_HEIGHT/7;
-
-const BALL_HEIGHT = CANV_WIDTH/110;
-
-let paddle = document.getElementById('paddle');
-
-let canvas = document.createElement('canvas');
-canvas.width = CANV_WIDTH;
-canvas.height = CANV_HEIGHT;
-
-const midHeight = Math.ceil(canvas.height/2);
-
-const momentumShift = CANV_HEIGHT/400;
-
-var player2 = false;
-var player_keypressed = '';
-var player2_keypressed = '';
-var ctx;
-var dx = CANV_WIDTH/240;
-let serveHeight = Math.ceil(Math.random()*100)+200;
-serveHeight = Math.random()*100 >= 50 ? serveHeight : -serveHeight;
-var dy = CANV_HEIGHT/serveHeight;
-var player_bar=new Bar(0,canvas.height/2-PADDLE_HEIGHT/2);
-var player2_bar = new Bar(canvas.width-PADDLE_WIDTH, canvas.height/2-PADDLE_HEIGHT/2);
-var circle=new Circle(canvas.width/2,canvas.height/2-BALL_HEIGHT/2,BALL_HEIGHT);
-var dyBar=CANV_HEIGHT/60;
 var timer;
 var counter = 0;
 var player_score = 0;
 var player2_score = 0;
 var staller;
 var unhit = true;
+var player2 = false;
+var player_keypressed = '';
+var player2_keypressed = '';
+var ctx;
+
+let paddle = document.getElementById('paddle');
+
+let canvas = document.createElement('canvas');
+
+let SCREEN_WIDTH;
+let SCREEN_HEIGHT;
+
+let CANV_WIDTH;
+let CANV_HEIGHT;
+
+let PADDLE_WIDTH;
+let PADDLE_HEIGHT;
+
+let BALL_HEIGHT;
+
+let midHeight;
+
+let momentumShift;
+
+var dx;
+let serveHeight;
+var dy;
+var player_bar;
+var player2_bar;
+var circle;
+var dyBar;
 
 function Bar(x,y){
   this.x=x;
@@ -240,6 +238,34 @@ function start(players=1){
 
 	document.getElementById('canvHolder').innerHTML = '';
 	document.getElementById('canvHolder').append(canvas);
+
+  SCREEN_WIDTH = window.innerWidth;
+  SCREEN_HEIGHT = window.innerHeight;
+
+  CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.7);
+  CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.6);
+
+  PADDLE_WIDTH = CANV_WIDTH/50;
+  PADDLE_HEIGHT = CANV_HEIGHT/7;
+
+  BALL_HEIGHT = CANV_WIDTH/110;
+
+  canvas.width = CANV_WIDTH;
+  canvas.height = CANV_HEIGHT;
+
+  midHeight = Math.ceil(canvas.height/2);
+
+  momentumShift = CANV_HEIGHT/400;
+
+
+  dx = CANV_WIDTH/240;
+  serveHeight = Math.ceil(Math.random()*100)+200;
+  serveHeight = Math.random()*100 >= 50 ? serveHeight : -serveHeight;
+  dy = CANV_HEIGHT/serveHeight;
+  player_bar=new Bar(0,canvas.height/2-PADDLE_HEIGHT/2);
+  player2_bar = new Bar(canvas.width-PADDLE_WIDTH, canvas.height/2-PADDLE_HEIGHT/2);
+  circle=new Circle(canvas.width/2,canvas.height/2-BALL_HEIGHT/2,BALL_HEIGHT);
+  dyBar=CANV_HEIGHT/60;
 
 	init();
 }
