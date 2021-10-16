@@ -1,8 +1,8 @@
 const SCREEN_WIDTH = window.innerWidth;
 const SCREEN_HEIGHT = window.innerHeight;
 
-const CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.8);
-const CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.8);
+const CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.5);
+const CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.5);
 
 const PADDLE_WIDTH = CANV_WIDTH/50;
 const PADDLE_HEIGHT = CANV_HEIGHT/9;
