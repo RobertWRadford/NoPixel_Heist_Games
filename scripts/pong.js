@@ -5,7 +5,7 @@ const CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.7);
 const CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.6);
 
 const PADDLE_WIDTH = CANV_WIDTH/50;
-const PADDLE_HEIGHT = CANV_HEIGHT/8;
+const PADDLE_HEIGHT = CANV_HEIGHT/7;
 
 const BALL_HEIGHT = CANV_WIDTH/110;
 
@@ -24,13 +24,13 @@ var player_keypressed = '';
 var player2_keypressed = '';
 var ctx;
 var dx = CANV_WIDTH/240;
-let serveHeight = Math.ceil(Math.random()*150)+25;
+let serveHeight = Math.ceil(Math.random()*100)+200;
 serveHeight = Math.random()*100 >= 50 ? serveHeight : -serveHeight;
 var dy = CANV_HEIGHT/serveHeight;
 var player_bar=new Bar(0,canvas.height/2-PADDLE_HEIGHT/2);
 var player2_bar = new Bar(canvas.width-PADDLE_WIDTH, canvas.height/2-PADDLE_HEIGHT/2);
 var circle=new Circle(canvas.width/2,canvas.height/2-BALL_HEIGHT/2,BALL_HEIGHT);
-var dyBar=CANV_HEIGHT/80;
+var dyBar=CANV_HEIGHT/60;
 var timer;
 var counter = 0;
 var player_score = 0;
@@ -175,9 +175,9 @@ function draw() {
   		unhit = true;
   		dx *= .5;
   	}
-    serveHeight = Math.ceil(Math.random()*150)+25;
+    serveHeight = Math.ceil(Math.random()*100)+200;
     serveHeight = Math.random()*100 >= 50 ? serveHeight : -serveHeight;
-    var dy = CANV_HEIGHT/serveHeight;
+    dy = CANV_HEIGHT/serveHeight;
   	let color = side=='player' ? 'green' : 'red';
   	circle.x = canvas.width/2;
     circle.y = canvas.height/2;
