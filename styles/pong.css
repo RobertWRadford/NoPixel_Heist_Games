@@ -46,6 +46,6 @@ input[type=submit]:hover {
 canvas {
 	margin-left: 50%;
 	transform: translateX(-50%);
-	width: 70vw;
-	height: 60vh;
+	width: 80vw;
+	height: min(70vh, 90vw);
 }

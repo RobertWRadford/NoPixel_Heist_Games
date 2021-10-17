@@ -242,8 +242,8 @@ function start(players=1){
   SCREEN_WIDTH = window.innerWidth;
   SCREEN_HEIGHT = window.innerHeight;
 
-  CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.7);
-  CANV_HEIGHT = Math.ceil(SCREEN_HEIGHT*.6);
+  CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.8);
+  CANV_HEIGHT = Math.min(Math.ceil(SCREEN_HEIGHT*.7), Math.ceil(SCREEN_WIDTH)*.9);
 
   PADDLE_WIDTH = CANV_WIDTH/50;
   PADDLE_HEIGHT = CANV_HEIGHT/7;
@@ -256,7 +256,6 @@ function start(players=1){
   midHeight = Math.ceil(canvas.height/2);
 
   momentumShift = CANV_HEIGHT/400;
-
 
   dx = CANV_WIDTH/240;
   serveHeight = Math.ceil(Math.random()*100)+200;
