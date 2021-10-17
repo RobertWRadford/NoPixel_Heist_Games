@@ -264,7 +264,7 @@ function start(players=1){
   player_bar=new Bar(0,canvas.height/2-PADDLE_HEIGHT/2);
   player2_bar = new Bar(canvas.width-PADDLE_WIDTH, canvas.height/2-PADDLE_HEIGHT/2);
   circle=new Circle(canvas.width/2,canvas.height/2-BALL_HEIGHT/2,BALL_HEIGHT);
-  dyBar=CANV_HEIGHT/60;
+  dyBar=CANV_HEIGHT/65;
 
 	init();
 }
