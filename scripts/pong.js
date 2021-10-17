@@ -242,7 +242,7 @@ function start(players=1){
   SCREEN_WIDTH = window.innerWidth;
   SCREEN_HEIGHT = window.innerHeight;
 
-  CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.8);
+  CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.75);
   CANV_HEIGHT = Math.min(Math.ceil(SCREEN_HEIGHT*.7), Math.ceil(SCREEN_WIDTH)*.7);
 
   PADDLE_WIDTH = CANV_WIDTH/50;
