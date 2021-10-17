@@ -3,12 +3,12 @@ body {
 }
 
 #canvHolder {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%,-40%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
 	width: 78vw;
-	height: min(73vh,73vw);
+	height: min(63vh,73vw);
 	background: rgb(34,40,50);
 	display: flex;
     flex-direction: column;
@@ -49,5 +49,5 @@ canvas {
 	margin-left: 50%;
 	transform: translateX(-50%);
 	width: 75vw;
-	height: min(70vh, 70vw);
+	height: min(60vh, 70vw);
 }

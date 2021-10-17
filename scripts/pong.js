@@ -65,7 +65,7 @@ function doKeyUp(e) {
 
 function doTouch(x,y){
   console.log(player_bar.y, ' | ', y, ' | ', player_bar.y+PADDLE_HEIGHT);
-  if (y<player_bar.y){
+  if (y-PADDLE_HEIGHT/3<player_bar.y){
     player_keypressed = 'w';
   } else if (y>player_bar.y+PADDLE_HEIGHT) {
     player_keypressed = 's';
@@ -151,7 +151,7 @@ function draw() {
     		if(player2_bar.y-dyBar>-dyBar) player2_bar.y-=dyBar;
   	}
   		else if(player2_keypressed =='ArrowDown'){
-    		if(player2_bar.y+PADDLE_HEIGHT+dyBar<=canvas.height) player2_bar.y+=dyBar;
+    		if(player2_bar.y+PADDLE_HEIGHT+dyBar<=canvas.height+dyBar) player2_bar.y+=dyBar;
   	}
   }
   if (player_keypressed != ''){
@@ -159,7 +159,7 @@ function draw() {
     		if(player_bar.y-dyBar>-dyBar) player_bar.y-=dyBar;
   	}
   		else if(player_keypressed=='s'){
-    		if(player_bar.y+PADDLE_HEIGHT+dyBar<=canvas.height) player_bar.y+=dyBar;
+    		if(player_bar.y+PADDLE_HEIGHT+dyBar<=canvas.height+dyBar) player_bar.y+=dyBar;
   	}
   }
 
@@ -243,7 +243,7 @@ function start(players=1){
   SCREEN_HEIGHT = window.innerHeight;
 
   CANV_WIDTH = Math.ceil(SCREEN_WIDTH*.75);
-  CANV_HEIGHT = Math.min(Math.ceil(SCREEN_HEIGHT*.7), Math.ceil(SCREEN_WIDTH)*.7);
+  CANV_HEIGHT = Math.min(Math.ceil(SCREEN_HEIGHT*.6), Math.ceil(SCREEN_WIDTH)*.7);
 
   PADDLE_WIDTH = CANV_WIDTH/50;
   PADDLE_HEIGHT = CANV_HEIGHT/7;
