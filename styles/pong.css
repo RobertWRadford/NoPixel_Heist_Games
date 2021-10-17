@@ -3,10 +3,12 @@ body {
 }
 
 #canvHolder {
-	width: 83vw;
-	height: min(73vh,93vw);
-	margin: auto;
-	margin-top: 3vh;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+	width: 78vw;
+	height: min(73vh,83vw);
 	background: rgb(34,40,50);
 	display: flex;
     flex-direction: column;
@@ -46,6 +48,6 @@ input[type=submit]:hover {
 canvas {
 	margin-left: 50%;
 	transform: translateX(-50%);
-	width: 80vw;
-	height: min(70vh, 90vw);
+	width: 75vw;
+	height: min(70vh, 80vw);
 }
