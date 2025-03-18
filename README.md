@@ -1,7 +1,5 @@
 # NoPixel_Heist_Games
 
-<a href="https://FauxPixel.com" target="_blank" rel="noopener noreferrer">Click here to go to FauxPixel.</a>
-<br>
 <a href="https://robertwradford.github.io/NoPixel_Heist_Games/" target="_blank" rel="noopener noreferrer">Click here to go to git hosted page.</a>
 
 ## Tutorial
